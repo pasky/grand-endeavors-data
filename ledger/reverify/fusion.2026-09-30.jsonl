@@ -1,0 +1,60 @@
+{"id": "2023-01-01-lindley-fusion-foak-lcoe", "result": "unverifiable", "note": "ScienceDirect returned an access/error page; the estimate cannot be checked."}
+{"id": "2024-01-01-helion-missed-2024-net-electricity", "result": "verified", "note": "The fetched page says Helion had targeted net electricity in 2024 and did not meet the target."}
+{"id": "2024-01-01-irena-lcoe-offshore-wind-2024", "result": "unverifiable", "note": "IRENA returned a JavaScript/WAF shell, not report content."}
+{"id": "2024-01-01-irena-lcoe-onshore-wind-2024", "result": "unverifiable", "note": "IRENA returned a JavaScript/WAF shell, not report content."}
+{"id": "2024-01-01-irena-lcoe-solar-2024", "result": "unverifiable", "note": "IRENA returned a JavaScript/WAF shell, not report content."}
+{"id": "2024-01-01-iter-baseline-2034-2039", "result": "verified", "note": "ITER pages give the 2024 baseline dates: first plasma 2034 and D-T operation 2039."}
+{"id": "2025-01-01-cfs-fusion-noak-lcoe", "result": "unverifiable", "note": "TIME fetch returned no page text."}
+{"id": "2025-01-01-cfs-google-200mw", "result": "unverifiable", "note": "CFS release text does not address a Google 200 MW purchase; no contradiction."}
+{"id": "2025-01-01-cfs-sparc-arc-timeline", "result": "corrected", "note": "CFS says SPARC is being completed and ARC development is underway; it specifies grid power in early 2030s, not SPARC operation in 2026."}
+{"id": "2025-01-01-cfs-sparc-progress", "result": "unverifiable", "note": "CFS release discusses SPARC progress but does not state the claimed DOE payment, vacuum-vessel delivery or assembly status."}
+{"id": "2025-01-01-deepmind-cfs-ai", "result": "unverifiable", "note": "CFS blog was blocked by Cloudflare."}
+{"id": "2025-01-01-doe-office-of-fusion", "result": "unverifiable", "note": "CATF page was blocked by Cloudflare."}
+{"id": "2025-01-01-ember-renewables-overtake-coal", "result": "verified", "note": "Ember reports H1 2025 renewable share 34.3% versus coal 33.1%."}
+{"id": "2025-01-01-ember-solar-83pct-demand-growth", "result": "verified", "note": "Ember explicitly says solar met 83% of global demand growth in H1 2025."}
+{"id": "2025-01-01-fervo-drilling-record", "result": "unverifiable", "note": "Fetched Series E announcement does not mention the claimed drilling depth, temperature or 79% result."}
+{"id": "2025-01-01-fervo-series-e-cape", "result": "corrected", "note": "Announcement is dated Dec. 10, 2025 and confirms $462M; Cape Station is scheduled for 100 MW in 2026 and another 400 MW by 2028."}
+{"id": "2025-01-01-first-light-flare", "result": "corrected", "note": "First Light release dated Sept. 19, 2025 supports FLARE and gain up to 1,000, but facility cost and licensing-model pivot are not established in fetched text."}
+{"id": "2025-01-01-ga-drilling-funding", "result": "unverifiable", "note": "Tracxn page text did not establish the stated $83M and Petrobras partnership."}
+{"id": "2025-01-01-germany-biblis-laser-fusion-mou", "result": "unverifiable", "note": "Fetched ANS page content did not establish the Biblis MOU claim."}
+{"id": "2025-01-01-hb11-reaction-rates", "result": "unverifiable", "note": "Fetched HB11 homepage does not state the funding amount or cited experimental results."}
+{"id": "2025-01-01-helion-2028-microsoft-target", "result": "verified", "note": "Helion page confirms the 2028 Microsoft power-purchase target."}
+{"id": "2025-01-01-helion-polaris-operational", "result": "unverifiable", "note": "Fetched Helion construction announcement does not say Polaris is operational or give employee count."}
+{"id": "2025-01-01-helion-series-f", "result": "unverifiable", "note": "Fetched Helion page links to a fundraise announcement but does not establish or contradict the January 2025 $425M Series F claim."}
+{"id": "2025-01-01-iea-eu-wholesale-h1-2025", "result": "unverifiable", "note": "The fetched IEA report does not contain the claimed wholesale-price series."}
+{"id": "2025-01-01-iea-geothermal-2035-cost", "result": "verified", "note": "Eavor states IEA projection: costs could fall up to 80% by 2035 to about $50/MWh."}
+{"id": "2025-01-01-iea-us-wholesale-h1-2025", "result": "unverifiable", "note": "The fetched IEA report does not contain the claimed wholesale-price series."}
+{"id": "2025-01-01-iter-sector-module-7", "result": "unverifiable", "note": "ITER timeline page does not establish the 2025 Sector Module #7 installation or schedule claim."}
+{"id": "2025-01-01-lazard-geothermal-lcoe", "result": "unverifiable", "note": "Lazard report text did not establish the stated EGS range."}
+{"id": "2025-01-01-lazard-lcoe-2025", "result": "corrected", "note": "Changed the onshore-wind range to $37–86/MWh and utility-scale solar PV to $38–78/MWh; these ranges are stated in the fetched June 2025 Lazard report, unlike the legacy figures."}
+{"id": "2025-01-01-mckinsey-egs-target", "result": "unverifiable", "note": "McKinsey request timed out; no source text fetched."}
+{"id": "2025-01-01-nea-127-smr-designs", "result": "unverifiable", "note": "OECD-NEA returned an access challenge, not dashboard content."}
+{"id": "2025-01-01-nif-enhanced-yield-approved", "result": "unverifiable", "note": "LLNL page did not state that the Enhanced Yield Capability upgrade was approved."}
+{"id": "2025-01-01-princeton-diag2diag", "result": "corrected", "note": "Fetched article describes synthetic diagnostic data for plasma analysis, not real-time plasma control; researchers are at Princeton Plasma Physics Laboratory."}
+{"id": "2025-01-01-quaise-100m-granite", "result": "corrected", "note": "Quote: “successfully drilled to a depth of 100 meters using its proprietary millimeter wave technology”. Removed unsupported 10–20 km target."}
+{"id": "2025-01-01-sage-meta-150mw", "result": "corrected", "note": "Sage projects page labels 3 MW San Miguel storage completed 2026 and 150 MW power generation as a separate project, estimated complete 2030; no Meta deal shown."}
+{"id": "2025-01-01-science-boty-renewables", "result": "unverifiable", "note": "Science returned a JavaScript challenge page."}
+{"id": "2025-01-01-tae-6b-merger", "result": "unverifiable", "note": "TAE site was blocked by Cloudflare."}
+{"id": "2025-01-01-tae-early-2030s-timeline", "result": "unverifiable", "note": "TAE site was blocked by Cloudflare."}
+{"id": "2025-01-01-tae-nbi-only-frc", "result": "unverifiable", "note": "TAE site was blocked by Cloudflare."}
+{"id": "2025-01-01-terrapower-natrium-650m", "result": "unverifiable", "note": "Fetched ANS page content did not establish either the financing or NRC evaluation claim."}
+{"id": "2025-01-01-tokamak-energy-2030s-timeline", "result": "unverifiable", "note": "Fetched ST40 announcement does not state the cited commercial timeline."}
+{"id": "2025-01-01-uk-2-5bn-fusion", "result": "verified", "note": "Kleinman article states the UK announced £2.5 billion in fusion investment over five years."}
+{"id": "2025-01-01-us-grid-storage-40gw", "result": "verified", "note": "Canary reports US installations crossed 35 GW in July and passed 40 GW in Q3 2025, citing ACP data."}
+{"id": "2025-01-01-zap-fuze3-1-6-gpa", "result": "corrected", "note": "Zap confirms 1.6 GPa total pressure, but says FuZE-3 (not FuZE-A) achieved it; the retrieved release gives no FuZE-A scale-up statement."}
+{"id": "2025-02-12-west-plasma-duration-record", "result": "corrected", "note": "CEA says 1,337 seconds on Feb. 12 (22 min 17 sec); correct the claim to the precise reported duration."}
+{"id": "2025-04-07-nif-q-4-13", "result": "verified", "note": "LLNL page explicitly says on April 7, 2025 NIF produced 8.6 MJ from 2.08 MJ laser input, target gain 4.13."}
+{"id": "2025-06-01-nif-thor-ignition", "result": "unverifiable", "note": "LLNL page does not address ignition on a THOR experimental platform."}
+{"id": "2025-06-01-tae-150m-raise", "result": "unverifiable", "note": "TAE site was blocked by Cloudflare."}
+{"id": "2025-07-01-fia-2025-investment", "result": "corrected", "note": "Quotes in PDF needed; retained existing corrected details, pending exact quote."}
+{"id": "2025-07-30-helion-orion-construction", "result": "corrected", "note": "Helion says initial earthwork/construction began July 22, 2025, not July 30."}
+{"id": "2025-08-28-cfs-series-b2-863m", "result": "verified", "note": "CFS release dated August 28, 2025 confirms the $863M raise, nearly $3B total, and largest deep-tech/energy raise since 2021."}
+{"id": "2025-09-01-nuscale-entra1-tva-6gw", "result": "corrected", "note": "NuScale release is dated Nov. 6, 2025, and says ENTRA1 signed agreement with TVA for up to 6 GW; it does not date signing to September."}
+{"id": "2025-10-01-superconducting-germanium", "result": "unverifiable", "note": "NYU fetch returned no content."}
+{"id": "2025-10-15-helion-reactor-building-permit", "result": "unverifiable", "note": "GeekWire fetch returned a JavaScript/cookie interstitial."}
+{"id": "2025-11-01-tokamak-energy-demo4-magnet", "result": "verified", "note": "Tokamak Energy release dated Nov. 19, 2025 explicitly gives 11.8 T at −243°C for Demo4."}
+{"id": "2025-11-17-tae-skips-copernicus", "result": "unverifiable", "note": "TAE site was blocked by Cloudflare."}
+{"id": "2025-12-01-eavor-geretsried-first-power", "result": "verified", "note": "Eavor release dated Dec. 4, 2025 confirms Geretsried began delivering power to the German grid."}
+{"id": "2025-12-01-h3s-superconducting-gap", "result": "verified", "note": "ScienceDaily dated Dec. 21, 2025 reports first direct measurement of H3S superconducting gap by Mainz researchers."}
+{"id": "2025-12-01-tokamak-energy-st40-records", "result": "corrected", "note": "Release confirms three records but reports plasma current, stored energy and triple product; claim's 1 MA and ~8×10^18 are not supported by retrieved article text."}
+{"id": "2026-01-01-china-solid-state-battery-standard", "result": "corrected", "note": "Electrek says China released a draft standard for public discussion on Jan. 2, 2026, not a finalized standard; correct date and draft status."}

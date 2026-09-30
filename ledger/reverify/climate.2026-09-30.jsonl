@@ -1,0 +1,73 @@
+{"id": "2024-01-01-adm-regenerations-2024", "result": "unverifiable", "note": "Downloaded PDF text was not extractable; source claim cannot be checked."}
+{"id": "2024-01-01-bnef-china-investment-2024", "result": "unverifiable", "note": "Page does not provide the 2024 figure; only a 2025 headline is exposed."}
+{"id": "2024-01-01-bnef-clean-energy-investment-2024", "result": "unverifiable", "note": "Page does not provide the 2024 sector breakdown in fetched text."}
+{"id": "2024-01-01-bnef-net-zero-investment-need", "result": "unverifiable", "note": "Page does not state the cited net-zero investment estimate."}
+{"id": "2024-01-01-china-357gw-solar-2024", "result": "unverifiable", "note": "PDF fetch was not extractable as text."}
+{"id": "2024-01-01-copernicus-2024-above-1-5c", "result": "corrected", "note": "The fetched source gives 1.60°C (not an alternate rounded figure) and identifies the estimate/reference baseline."}
+{"id": "2024-01-01-edgar-global-ghg-2024", "result": "corrected", "note": "EDGAR explicitly scopes 53.2 GtCO2e as excluding LULUCF; added that material scope."}
+{"id": "2024-01-01-gcb-land-sink-2024", "result": "unverifiable", "note": "Fetched source text did not establish the claim’s full values and scope."}
+{"id": "2024-01-01-global-solar-600gw-2024", "result": "unverifiable", "note": "PDF fetch was not extractable as text."}
+{"id": "2024-01-01-iea-coal-demand-record-2024", "result": "unverifiable", "note": "Fetched source text did not establish the claim’s full values and scope."}
+{"id": "2024-01-01-iea-record-666gw-renewables", "result": "unverifiable", "note": "Fetched source text did not establish the claim’s full values and scope."}
+{"id": "2024-01-01-nasa-2024-anomaly", "result": "verified", "note": "NASA explicitly states 1.47°C and 1850–1900 baseline, warmest year."}
+{"id": "2024-01-01-noaa-2024-anomaly", "result": "unverifiable", "note": "NOAA page fetch did not expose the global 2024 anomaly value."}
+{"id": "2024-01-01-noaa-co2-annual-mean-2024", "result": "unverifiable", "note": "Current NOAA page did not expose 2024 annual values."}
+{"id": "2024-01-01-tennessee-sunlight-modification-ban", "result": "unverifiable", "note": "HTTP 403 / source returned no bill content."}
+{"id": "2024-01-01-wmo-2024-warmest-1-55c", "result": "verified", "note": "WMO states 1.55 ± 0.13°C and six datasets."}
+{"id": "2024-01-01-wmo-long-term-warming-1-3-1-4c", "result": "unverifiable", "note": "The fetched page only says long-term warming remains below 1.5°C; it does not support the claimed 1.3°C assessed value."}
+{"id": "2024-01-01-wmo-record-co2-increase-2024", "result": "verified", "note": "WMO gives 3.5 ppm, record increase, 2.4 ppm/year decade mean, and cited drivers."}
+{"id": "2024-09-01-uk-50m-geoengineering-research", "result": "unverifiable", "note": "EPA page does not address a UK programme."}
+{"id": "2024-11-01-cop29-article-6", "result": "verified", "note": "COP29 source says Article 6 negotiations concluded and market rules were operationalised."}
+{"id": "2024-11-01-cop29-finance-goal", "result": "unverifiable", "note": "HTTP 403 / UNFCCC returned no article content."}
+{"id": "2025-01-01-arctic-ice-project-shuts-down", "result": "unverifiable", "note": "Cloudflare challenge; source text unavailable."}
+{"id": "2025-01-01-byd-overtakes-tesla", "result": "unverifiable", "note": "Fetched article does not substantiate this 2025 sales claim."}
+{"id": "2025-01-01-cdr-fyi-capture-capacity-gap", "result": "unverifiable", "note": "Fetched snapshot contains no operating DAC capacity, CCS capacity, or required-scale figures."}
+{"id": "2025-01-01-cdr-fyi-dac-investment-deliveries", "result": "verified", "note": "CDR.fyi states $2.3B investment, 2.47M tonnes contracted, and just over 1,000 tonnes delivered."}
+{"id": "2025-01-01-china-ev-share-over-50pct", "result": "corrected", "note": "The source covers H1 2025, not the full year; narrowed the period to match its reported scope."}
+{"id": "2025-01-01-climeworks-mammoth-ramp-up-issues", "result": "unverifiable", "note": "Climeworks page was blocked and the linked coverage does not establish operational status/ramp-up."}
+{"id": "2025-01-01-ember-emerging-market-ev-leapfrog", "result": "verified", "note": "Ember page confirms cited country sales shares and comparisons."}
+{"id": "2025-01-01-heirloom-louisiana-475m", "result": "verified", "note": "Heirloom/LED sources confirm $475M, 17,000 t/year first phase, and ~320,000 t/year combined."}
+{"id": "2025-01-01-iea-cdr-costs", "result": "unverifiable", "note": "Fetched source text did not establish the claim’s full values and scope."}
+{"id": "2025-01-01-iea-ev-one-in-four", "result": "unverifiable", "note": "IEA fetched pages do not expose the stated forecast details."}
+{"id": "2025-01-01-iea-nze-benchmarks", "result": "unverifiable", "note": "IEA page does not provide the full set of figures in the claim."}
+{"id": "2025-01-01-iea-renewables-overtake-coal-2025", "result": "unverifiable", "note": "IEA page does not expose the specific coal-overtaking statement."}
+{"id": "2025-01-01-microsoft-chestnut-7mt", "result": "verified", "note": "TechCrunch says more than 7 million tons, dated January 30, 2025."}
+{"id": "2025-01-01-nature-comms-reforestation-revised", "result": "verified", "note": "Nature Communications source gives up to 195 Mha and 2,225 TgCO2e/year."}
+{"id": "2025-01-01-net-zero-stocktake-2025-gdp", "result": "verified", "note": "Net Zero Stocktake explicitly says 77% GDP and 83% including US states."}
+{"id": "2025-01-01-net-zero-tracker-country-targets", "result": "corrected", "note": "The tracker currently lists 138 countries, not 137, and the fetched page does not support the claimed count of 35 legally binding national targets; corrected the count and removed unsupported detail."}
+{"id": "2025-01-01-project-bison-paused", "result": "verified", "note": "Carbon Herald article reports Project Bison paused and cites data-center competition."}
+{"id": "2025-01-01-sbti-company-targets", "result": "unverifiable", "note": "Dashboard fetched text does not verify exact counts."}
+{"id": "2025-01-01-sbti-trend-tracker-227pct", "result": "unverifiable", "note": "Report page does not expose 227% figure in fetched text."}
+{"id": "2025-01-01-stratos-dac-launch-2025", "result": "verified", "note": "Carbon Herald and 1PointFive support 500,000 t/year capacity and planned end-2025 launch."}
+{"id": "2025-01-01-tesla-2025-sales-decline", "result": "unverifiable", "note": "Axios returned a challenge page (source inaccessible)."}
+{"id": "2025-01-01-us-states-anti-geoengineering-bills", "result": "unverifiable", "note": "SRM360 returned a Cloudflare challenge (HTTP 403)."}
+{"id": "2025-01-01-us-withdraws-paris", "result": "unverifiable", "note": "CAT page supports loss of the US federal net-zero target but does not address the claimed Paris Agreement withdrawal."}
+{"id": "2025-01-01-wmo-70pct-5yr-above-1-5c", "result": "unverifiable", "note": "WMO source does not state the 70% 2025–29 probability."}
+{"id": "2025-03-24-noaa-sai-marine-clouds", "result": "verified", "note": "NOAA source confirms publication date and ~10% cloud reflectance effect."}
+{"id": "2025-04-01-carbon-brief-china-co2-first-clean-energy-decline", "result": "unverifiable", "note": "HTTP 403 / Carbon Brief page is blocked."}
+{"id": "2025-04-01-microsoft-co280-3-7mt", "result": "verified", "note": "TechCrunch reports 3.7M tonnes from CO280/paper mills."}
+{"id": "2025-04-15-epa-make-sunsets", "result": "verified", "note": "EPA release dated April 15 says it demanded information from Make Sunsets under Clean Air Act."}
+{"id": "2025-05-01-scripps-mlo-peak-430ppm", "result": "corrected", "note": "The source distinguishes the Scripps value (430.2 ppm) from NOAA’s 430.5 ppm; corrected the attribution and number."}
+{"id": "2025-06-25-noaa-mcb-ozone", "result": "unverifiable", "note": "HTTP 403 / NOAA Research page inaccessible."}
+{"id": "2025-07-01-florida-sb56-geoengineering-ban", "result": "unverifiable", "note": "Florida Senate page confirms enactment/effective date but not the claimed felony and sentence details."}
+{"id": "2025-07-01-microsoft-vaulted-deep-4-9mt", "result": "verified", "note": "TechCrunch reports Microsoft purchase of 4.9M tonnes from Vaulted Deep."}
+{"id": "2025-08-01-deep-sky-alpha-operational", "result": "corrected", "note": "Source describes the August milestone as first DAC CO2 storage, not the entire centre becoming operational; corrected event wording."}
+{"id": "2025-09-09-polar-scientists-geoengineering-warning", "result": "verified", "note": "Frontiers article publication date and assessment support the cited warning and approaches."}
+{"id": "2025-09-25-china-2035-ndc", "result": "corrected", "note": "Quotes: “China’s new 2035 climate target” and “unlikely to further drive down emissions”. Removed the unsupported 7–10% figure and submission date."}
+{"id": "2025-10-24-stardust-raises-60m", "result": "unverifiable", "note": "Politico returned a bot-check page; no article text."}
+{"id": "2025-11-01-noaa-mlo-co2-nov-2025", "result": "unverifiable", "note": "Fetched NOAA trends page provides no November 2025 monthly mean value; the core dated measurement is not present in fetched text."}
+{"id": "2025-11-01-uk-ndc-81pct-2035", "result": "verified", "note": "WRI reports UK target of 81% below 1990 by 2035; its article is dated November 12."}
+{"id": "2025-11-11-carbon-brief-china-co2-2025-projection", "result": "unverifiable", "note": "HTTP 403 / Carbon Brief page is blocked."}
+{"id": "2025-11-11-carbon-brief-china-flat-18-months", "result": "unverifiable", "note": "HTTP 403 / Carbon Brief page is blocked."}
+{"id": "2025-11-13-gcb-2025-1-5c-budget-exhausted", "result": "verified", "note": "GCB source calls the remaining 1.5°C budget virtually exhausted."}
+{"id": "2025-11-13-gcb-2025-china-share", "result": "unverifiable", "note": "Fetched GCB release does not state China’s 32% share; the core claim is unsupported."}
+{"id": "2025-11-13-gcb-2025-fossil-co2-record", "result": "corrected", "note": "Quotes: “projected to rise by 1.1% in 2025” and “38.1 billion tonnes of fossil carbon dioxide (CO2) emissions this year”. Removed the unsupported 2024 figure and growth rate."}
+{"id": "2025-11-13-gcb-2025-land-sink-recovery", "result": "unverifiable", "note": "HTTP 403 / Carbon Brief page is blocked."}
+{"id": "2025-11-13-gcb-2025-land-use-emissions", "result": "verified", "note": "GCB source states 2025 land-use-change emissions projected at 4.1 GtCO2."}
+{"id": "2025-11-13-nature-sinks-15pct-weaker", "result": "verified", "note": "Nature states climate change reduces sink efficiency and contributes to the atmospheric CO2 rise; source publication date is Nov. 12."}
+{"id": "2025-12-01-banks-exit-nzba", "result": "verified", "note": "Guardian article identifies JP Morgan, HSBC, Barclays as NZBA departures in 2025."}
+{"id": "2025-12-01-ford-ev-writedown", "result": "verified", "note": "Guardian reports Ford’s $19.5bn write-down and scrapped EV models."}
+{"id": "2025-12-01-india-saudi-argentina-no-ndc", "result": "corrected", "note": "The article’s updated text identifies Vietnam, not Saudi Arabia; it says Saudi Arabia submitted its NDC on December 31."}
+{"id": "2025-12-01-microsoft-c2x-3-6mt", "result": "verified", "note": "TechCrunch confirms 3.6M tonnes from C2X bioenergy plant."}
+{"id": "2025-12-01-morrisons-delays-net-zero", "result": "verified", "note": "Guardian reports Morrisons delayed net-zero target from 2035 to 2050."}
+{"id": "2026-01-02-orsted-revolution-wind-challenge", "result": "verified", "note": "CNBC article dated Jan 2 reports Ørsted’s $5bn Revolution Wind legal action."}

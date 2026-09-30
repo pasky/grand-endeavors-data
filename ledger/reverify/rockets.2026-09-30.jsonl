@@ -1,0 +1,56 @@
+{"id": "1985-01-01-space-shuttle-cost-per-kg", "result": "unverifiable", "note": "CSIS page text did not expose the historical Shuttle cost figure."}
+{"id": "2020-01-01-eden-iss-produce", "result": "corrected", "note": "Paper reports 268 kg fresh edible biomass over a 286-day operational phase in 2018; it does not support the claimed 12.5 m²/9-month scope."}
+{"id": "2023-04-01-tiangong-oxygen-water-regeneration", "result": "corrected", "note": "SCIO states 100% of oxygen supply is produced by the onboard regeneration system, but the fetched article does not state the claimed >95% water recovery."}
+{"id": "2023-06-01-iss-98-percent-water-recovery", "result": "verified", "note": "NASA says the ISS Environmental Control and Life Support System demonstrated recovery of close to 98% of water, the threshold needed for long journeys."}
+{"id": "2024-01-01-artemis-i-radiation-nature", "result": "corrected", "note": "Nature supports the 150 mSv shelter limit but the reported Helga value/scope in the claim is not substantiated as written."}
+{"id": "2024-02-01-varda-w1-reentry", "result": "unverifiable", "note": "Fetched TechCrunch article text did not address W-1’s February 2024 return."}
+{"id": "2024-07-17-viper-cancelled", "result": "unverifiable", "note": "NASA fetch returned page/navigation text without the release’s substantive claim."}
+{"id": "2024-09-01-moxie-completes-mission", "result": "corrected", "note": "NASA says MOXIE completed its mission in 2023, ran 16 times, reached up to 12 g/hour and 98%+ purity; claim incorrectly dates completion to September 2024 and says 122 g."}
+{"id": "2025-01-01-axiom-station-module-welds", "result": "corrected", "note": "Axiom says first module final welds are complete, but PPTM/2027 launch not supported; its current station plan targets no earlier than 2028."}
+{"id": "2025-01-01-china-ilrs-basic-base-2035", "result": "unverifiable", "note": "Fetched China-in-Space page did not address the ILRS 2035 target."}
+{"id": "2025-01-01-cosmic-shielding-afrl-contract", "result": "unverifiable", "note": "Fetched SpaceNews page text did not surface the contract amount or on-orbit system count."}
+{"id": "2025-01-01-electron-cost-per-kg", "result": "unverifiable", "note": "Fetched Electron article did not state the claimed 2025 cost-per-kg figure."}
+{"id": "2025-01-01-flawless-photonics-zblan", "result": "unverifiable", "note": "Fetch returned only 33 characters, no claim-supporting article text."}
+{"id": "2025-01-01-fy2026-nasa-budget-cuts", "result": "unverifiable", "note": "Fetched SpaceNews budget page did not address the FY2026 request and SLS proposal."}
+{"id": "2025-01-01-gateway-ppe-halo-2027", "result": "unverifiable", "note": "Fetched NASA page text did not state the claimed 2027 joint launch date."}
+{"id": "2025-01-01-guowang-12-batches", "result": "unverifiable", "note": "SpaceNews fetched article supports the 12th group but does not expose the claimed 13,000-satellite constellation figure."}
+{"id": "2025-01-01-in-space-manufacturing-market-forecast", "result": "unverifiable", "note": "Fetched MarketsandMarkets text did not show the cited $4.6B/2030 and $62.8B/2040 forecast."}
+{"id": "2025-01-01-iss-food-fully-resupplied", "result": "unverifiable", "note": "NASA article discusses an agriculture experiment and fresh produce, not a quantified 100% resupply dependence."}
+{"id": "2025-01-01-iss-oxygen-recovery-50-percent", "result": "unverifiable", "note": "NASA SCOR page describes the development effort but does not state the claimed current 50% recovery and >75% target together."}
+{"id": "2025-01-01-jsr-payload-mass-2025", "result": "unverifiable", "note": "Fetched annual statistics file does not support the claimed 2025 total/annual series as stated."}
+{"id": "2025-01-01-launch-price-per-kg-comparison", "result": "corrected", "note": "The page gives Falcon Heavy $1,500/kg, Falcon 9 $2,720/kg, Vulcan $4,044/kg, and Electron $19,039/kg; it does not give the stated New Glenn $1,500–2,000/kg."}
+{"id": "2025-01-01-long-march-3b-cost-per-kg", "result": "unverifiable", "note": "Fetched China-in-Space page did not state the claimed $4,412/kg Long March 3B estimate."}
+{"id": "2025-01-01-lunar-palace-1-food-self-sufficiency", "result": "unverifiable", "note": "Fetched paper did not substantiate the claimed 80% food self-sufficiency, 105-day test, and three-person scope."}
+{"id": "2025-01-01-mars-mission-dose-estimate", "result": "corrected", "note": "Quotes: “approximately 0.66 Sv for a round trip” and “A 500-day mission on the surface would bring the total exposure to around 1 Sv”. Removed unsupported 0.34 Sv, 1.2 Sv, and comparison with 0.6 Sv career limit/risk."}
+{"id": "2025-01-01-redwire-heart-tissue", "result": "unverifiable", "note": "Fetched Redwire source text did not substantiate first live human heart tissue or 14 PIL-BOX experiments."}
+{"id": "2025-01-01-spacex-167-launches", "result": "refuted", "note": "Space.com explicitly corrected its earlier 167 figure to 165 orbital flights; the source directly contradicts the claimed count."}
+{"id": "2025-01-01-spacex-share-of-mass-to-orbit", "result": "unverifiable", "note": "The fetched summary text did not establish the global payload-mass shares for 2025, 2024, and 2020."}
+{"id": "2025-01-01-starliner-downgraded", "result": "unverifiable", "note": "Space.com page did not state the contract reduction from six to four missions; its text only indicates the next flight is uncrewed."}
+{"id": "2025-01-01-vast-haven-1-flight-article", "result": "corrected", "note": "Vast says its flight article is built and provides progress, but current page targets launch in 2027, not May 2026."}
+{"id": "2025-01-16-starship-flight-7", "result": "unverifiable", "note": "SpaceX mission page fetch returned only 6 characters."}
+{"id": "2025-03-01-prime-1-drill-demo", "result": "unverifiable", "note": "NASA page text did not establish the claim that PRIME-1 demonstrated TRIDENT in March; page discusses mission context."}
+{"id": "2025-03-02-blue-ghost-m1-lands", "result": "unverifiable", "note": "The cited NASA release concerns the earlier IM-2 launch and does not substantiate Blue Ghost’s landing or first-successful-CLPS wording."}
+{"id": "2025-03-06-im-2-lands-tips-over", "result": "corrected", "note": "Quote: “included a drill to bring lunar soil to the surface”. Removed unsupported 86°S and claim that it did not sample ice."}
+{"id": "2025-03-06-starship-flight-8", "result": "unverifiable", "note": "NASASpaceflight fetch returned only 16 characters."}
+{"id": "2025-03-18-starliner-crew-return-crew-9", "result": "unverifiable", "note": "Cited Space.com page discusses Starliner follow-on flight, not the March 18 Crew-9 return."}
+{"id": "2025-03-24-artemis-official-schedule", "result": "unverifiable", "note": "NASA page supports Artemis II integration context but does not state both claimed schedule targets."}
+{"id": "2025-04-01-fram2-polar-orbit", "result": "verified", "note": "Fetched Fram2 page identifies the first crewed polar-orbit spaceflight and four-person civilian crew; reported inclination is about 90 degrees."}
+{"id": "2025-04-23-china-crewed-landing-2030", "result": "unverifiable", "note": "Reuters fetch returned only 55 characters."}
+{"id": "2025-05-01-kennedy-mre-oxygen-from-regolith", "result": "unverifiable", "note": "NASA page text describes oxygen production from lunar regolith simulant, but does not support the claim’s May 2025 timing and “first time in vacuum” scope."}
+{"id": "2025-05-01-space-forge-payload-return", "result": "unverifiable", "note": "Fetch returned no article text."}
+{"id": "2025-05-27-starship-flight-9", "result": "unverifiable", "note": "Fetched NBC text did not clearly establish the full first-reused-booster and booster-loss claim."}
+{"id": "2025-08-01-starship-100-per-kg-projection", "result": "unverifiable", "note": "Fetched NextBigFuture text did not state the exact $100/kg projection as a supported claim."}
+{"id": "2025-08-26-starship-flight-10", "result": "unverifiable", "note": "Fetched Scientific American text did not substantiate the first payload-deployment demonstration and ship ocean landing."}
+{"id": "2025-09-01-nasa-2025-astronaut-class", "result": "verified", "note": "NASA release identifies its 2025 astronaut candidate class; the release states 10 selected from about 8,000 applicants."}
+{"id": "2025-09-19-viper-revived-blue-origin", "result": "verified", "note": "NASA release dated September 19, 2025 states a $190 million potential CLPS task order for Blue Origin to deliver VIPER to the south pole."}
+{"id": "2025-10-13-starship-flight-11", "result": "unverifiable", "note": "Scientific American describes Flight 11 as successful but does not establish that all test objectives were met or Block 2 was retired."}
+{"id": "2025-10-20-artemis-iii-landing-slips-2028", "result": "unverifiable", "note": "Reuters fetch failed at article-text extraction and the secondary source does not verify every schedule detail."}
+{"id": "2025-10-20-nasa-opens-hls-to-competitors", "result": "unverifiable", "note": "Reuters fetch failed at article-text extraction."}
+{"id": "2025-10-21-esa-space-environment-report", "result": "corrected", "note": "Quote: “54.000 objects greater than 10 cm” and “1.2 million objects from 1 cm to 10 cm”. Corrected to the report’s estimated populations, not tracked objects."}
+{"id": "2025-11-01-shenzhou-20-debris-shenzhou-22", "result": "unverifiable", "note": "Reuters fetch returned 55 characters."}
+{"id": "2025-11-13-new-glenn-booster-landing", "result": "verified", "note": "CNN text describes New Glenn’s booster landing on the second flight and the ESCAPADE mission; it identifies the landing as a first for a non-SpaceX company."}
+{"id": "2025-11-28-varda-w5-launch", "result": "unverifiable", "note": "Fetched TechCrunch article discusses Varda but does not address the W-5 launch date."}
+{"id": "2025-11-30-varda-five-missions", "result": "unverifiable", "note": "Fetched TechCrunch page extraction did not expose the interview text supporting five successful missions/reentries."}
+{"id": "2025-12-01-executive-order-space-superiority", "result": "corrected", "note": "Order text supports a 2028 Moon return goal, commercial-space priorities and revocation of the 2021 National Space Council order; it does not dissolve the Council."}
+{"id": "2025-12-16-artemis-accords-59-signatories", "result": "unverifiable", "note": "NASA page did not show the claimed 59 signatories as of December 16, 2025."}
+{"id": "2025-12-18-isaacman-confirmed-nasa-administrator", "result": "verified", "note": "Spaceflight Now source dated December 18, 2025 reports the Senate confirmation of Jared Isaacman as NASA Administrator."}

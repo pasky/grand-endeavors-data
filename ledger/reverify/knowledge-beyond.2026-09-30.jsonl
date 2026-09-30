@@ -1,0 +1,70 @@
+{"id": "2024-01-01-geometric-langlands-proof", "result": "verified", "note": "MPG page confirms Gaitsgory received the 2025 mathematics Breakthrough Prize for geometric Langlands."}
+{"id": "2024-11-01-moving-sofa-proof", "result": "corrected", "note": "arXiv record dated 2024-11-29 says Baek submitted a proof resolving the moving sofa problem; it does not describe it as under review at Annals."}
+{"id": "2024-12-01-google-willow-below-threshold", "result": "verified", "note": "Google’s announcement states Willow has 105 qubits and below-threshold error correction with error rates falling exponentially as qubits are added."}
+{"id": "2025-01-01-alzheimers-antibody-approvals", "result": "unverifiable", "note": "Fetched Eisai release concerns December 2025 maintenance-treatment data and does not substantiate the combined FDA/EU approvals and 27% claim."}
+{"id": "2025-01-01-alzheimers-blood-test-fda", "result": "unverifiable", "note": "Fetched page was unavailable/empty; it did not establish the FDA-approval claim."}
+{"id": "2025-01-01-asgct-pipeline-q2", "result": "corrected", "note": "ASGCT Q2 report gives 679 clinical-stage asset-indications and 36 approved gene therapies, explicitly including genetically modified cell therapies."}
+{"id": "2025-01-01-casgevy-expansion", "result": "unverifiable", "note": "IGI page returned a JavaScript challenge, so its country approvals and treated-patient count could not be checked."}
+{"id": "2025-01-01-china-1t-yuan-venture-fund", "result": "corrected", "note": "Gov.cn reports launch on 26 December 2025 of a national venture-capital guidance fund for innovation; it does not state a quantum-specific allocation."}
+{"id": "2025-01-01-doe-625m-qis-centers", "result": "verified", "note": "DOE announcement states $625 million to advance the next phase of its five National Quantum Information Science Research Centers."}
+{"id": "2025-01-01-drosophila-connectome", "result": "verified", "note": "Nature FlyWire collection states the adult fly-brain wiring diagram includes about 140,000 neurons and more than 50 million connections."}
+{"id": "2025-01-01-dwave-supremacy-replicated", "result": "verified", "note": "Scientific American describes independent classical methods matching the D-Wave result on a laptop."}
+{"id": "2025-01-01-em-connectomics-method-of-year", "result": "verified", "note": "Nature Methods article title explicitly names electron microscopy-based connectomics Method of the Year 2025."}
+{"id": "2025-01-01-eutelsat-oneweb-654", "result": "unverifiable", "note": "Fetched Via Satellite page did not expose evidence for the 654-satellite count or global coverage."}
+{"id": "2025-01-01-fcc-860m-pledges", "result": "unverifiable", "note": "The cited CERN URL returned a page-not-found page."}
+{"id": "2025-01-01-fcc-ee-recommended", "result": "unverifiable", "note": "The cited CERN URL returned a page-not-found page and does not establish the recommendation."}
+{"id": "2025-01-01-gaitsgory-breakthrough-prize", "result": "verified", "note": "MPG release confirms the $3 million 2025 Breakthrough Prize in Mathematics went to Dennis Gaitsgory for geometric Langlands."}
+{"id": "2025-01-01-global-gov-quantum-total", "result": "unverifiable", "note": "Fetched QURECA page is its 2026 update and did not establish the claimed $55.7bn total or $3.1bn 2024 figure."}
+{"id": "2025-01-01-japan-quantum-investment", "result": "unverifiable", "note": "Riverlane source was blocked by Cloudflare; Japan investment claims could not be checked."}
+{"id": "2025-01-01-kakeya-3d-proof", "result": "verified", "note": "Quanta article dated 14 March 2025 reports Hong Wang and Joshua Zahl’s proof of the three-dimensional Kakeya conjecture."}
+{"id": "2025-01-01-lhc-record-collisions", "result": "verified", "note": "CERN reports record 2025 integrated luminosity and more collisions detected than in any previous year."}
+{"id": "2025-01-01-lhc-run3-extension", "result": "verified", "note": "CERN announcement states the LHC run is extended through July 2026."}
+{"id": "2025-01-01-majorana-1-disputed", "result": "unverifiable", "note": "New Scientist fetch returned only a non-article placeholder; the dispute wording could not be checked."}
+{"id": "2025-01-01-microns-mouse-cortex", "result": "corrected", "note": "Nature describes an EM reconstruction of more than 200,000 neurons, but the dataset covers multiple visual-cortex areas, not just one cubic millimetre as stated."}
+{"id": "2025-01-01-neuralink-12-patients", "result": "unverifiable", "note": "Neuralink updates page did not expose readable evidence for the bundled patient, hours, bitrate, and FDA-designation figures."}
+{"id": "2025-01-01-nni-fy2025-budget", "result": "corrected", "note": "The FY2025 supplement is a budget request, not an enacted record budget; it documents requested agency funding, not cumulative investment above $45bn."}
+{"id": "2025-01-01-psiquantum-series-e", "result": "unverifiable", "note": "McKinsey page fetch was unavailable; it did not provide checkable evidence for the financing claim."}
+{"id": "2025-01-01-qec-talent-shortage", "result": "unverifiable", "note": "Riverlane source was blocked by Cloudflare; workforce estimates could not be checked."}
+{"id": "2025-01-01-quantum-q1-funding", "result": "verified", "note": "SpinQ article states $1.25bn quantum-sector funding in Q1 2025, up 128% year over year."}
+{"id": "2025-01-01-ska-first-signals", "result": "corrected", "note": "SKAO reports a first image from an early SKA-Low version and first fringes from SKA-Mid, not first scientific signals detected by the finished telescope."}
+{"id": "2025-01-01-starlink-9m-subscribers", "result": "unverifiable", "note": "Starlink page returned a JavaScript-limited shell and did not show the claimed subscriber, satellite, or country counts."}
+{"id": "2025-01-01-synchron-trials", "result": "unverifiable", "note": "Synchron news page did not provide evidence for the bundled trial-patient, pivotal-trial, and Apple-integration assertions."}
+{"id": "2025-01-01-tsmc-n2-specs", "result": "unverifiable", "note": "TSMC technology page returned a JavaScript challenge; its performance specifications could not be checked."}
+{"id": "2025-02-01-eu-samrna-vaccine", "result": "unverifiable", "note": "Fetched EMA homepage did not address this vaccine approval claim; it neither verifies nor contradicts it."}
+{"id": "2025-02-01-psiquantum-omega-nature", "result": "corrected", "note": "Nature paper published 26 February 2025 is titled “A manufacturable platform for photonic quantum computing”; it describes a platform, not a published Omega chipset."}
+{"id": "2025-02-04-slac-nickelate-ambient", "result": "verified", "note": "SLAC release dated 4 February 2025 reports researchers stabilized nickelate superconductors at room pressure."}
+{"id": "2025-02-19-microsoft-majorana-1", "result": "verified", "note": "Microsoft’s 19 February announcement calls Majorana 1 its first topological-core processor and describes a path to one million qubits."}
+{"id": "2025-03-01-hilbert-sixth-problem", "result": "corrected", "note": "arXiv record shows the paper was submitted 3 March 2025 and rigorously derives fluid equations via Boltzmann kinetic theory, not directly from Newton’s laws."}
+{"id": "2025-04-01-fda-zevaskyn", "result": "verified", "note": "FDA ZEVASKYN page confirms approval for recessive dystrophic epidermolysis bullosa in April 2025."}
+{"id": "2025-04-01-precision-510k", "result": "corrected", "note": "Nature article dates the FDA 510(k) clearance to December 2025, not April."}
+{"id": "2025-05-01-fda-yutrepia", "result": "unverifiable", "note": "FDA general news page did not address Yutrepia approval or the claimed PRINT technology."}
+{"id": "2025-05-01-first-personalized-crispr", "result": "unverifiable", "note": "NEJM URL returned a JavaScript challenge; the patient and treatment details could not be checked."}
+{"id": "2025-06-01-3gpp-6g-studies", "result": "unverifiable", "note": "Ericsson source returned a JavaScript challenge, so it did not provide evidence for the claimed June initiation."}
+{"id": "2025-06-01-paradromics-first-in-human", "result": "unverifiable", "note": "Paradromics source was blocked by Cloudflare; it did not substantiate a first-in-human implantation."}
+{"id": "2025-06-01-rubin-first-light", "result": "corrected", "note": "Rubin release confirms first imagery and 2,104 asteroids from just over 10 hours of test observations; first imagery was released in June 2025."}
+{"id": "2025-07-01-bristol-molecular-motor", "result": "unverifiable", "note": "C&EN page did not expose text substantiating the enzyme-powered rotation and “first” claims."}
+{"id": "2025-07-01-gemini-deep-think-imo-gold", "result": "corrected", "note": "Quotes: “35 points out of 42” and “natural language proofs”. Removed 5-of-6 problems and the 4.5-hour limit, absent in fetched text."}
+{"id": "2025-07-01-openai-imo-gold", "result": "corrected", "note": "The linked GitHub repository contains proof solutions, but the fetched page did not say IMO coordinators verified them or establish an official contest score."}
+{"id": "2025-07-01-parkinsons-bilateral-fus-fda", "result": "unverifiable", "note": "Focused Ultrasound Foundation newsletter did not expose evidence for the claimed FDA approval."}
+{"id": "2025-09-01-quantinuum-600m-raise", "result": "verified", "note": "Quantinuum release confirms a $600m capital raise at a $10bn pre-money valuation."}
+{"id": "2025-09-01-tavapadon-nda", "result": "verified", "note": "Michael J. Fox Foundation article confirms tavapadon was submitted to FDA for approval in September 2025."}
+{"id": "2025-10-01-google-quantum-echoes-advantage", "result": "refuted", "note": "The cited Nature article is “Observation of constructive interference at the edge of quantum ergodicity”; it does not report Google’s Quantum Echoes or a 13,000× Frontier comparison."}
+{"id": "2025-10-01-ionq-2b-equity-offering", "result": "unverifiable", "note": "IonQ results page returned a JavaScript challenge; the $2bn offering and cash-position figures could not be checked."}
+{"id": "2025-10-01-ionq-9999-fidelity", "result": "unverifiable", "note": "IonQ press-release page returned a JavaScript challenge; fidelity and scale-up claims could not be checked."}
+{"id": "2025-10-01-northwestern-sna-leukemia", "result": "verified", "note": "Northwestern release reports an SNA leukemia treatment 10,000 times more effective than standard chemotherapy in an animal study."}
+{"id": "2025-11-01-alphaproof-nature", "result": "verified", "note": "Nature article describes Olympiad-level formal mathematical reasoning with reinforcement learning and reports AlphaProof’s prior 28/42 IMO result."}
+{"id": "2025-11-01-amazon-leo-enterprise-preview", "result": "unverifiable", "note": "Fetched Amazon page is a later progress update; it does not address satellite count or enterprise preview specifically in November 2025."}
+{"id": "2025-11-01-paradromics-ide-approval", "result": "unverifiable", "note": "Paradromics source was blocked by Cloudflare; IDE status and bit-rate assertions could not be verified."}
+{"id": "2025-11-01-quantinuum-helios-launch", "result": "corrected", "note": "Quote: “98 PQ at 99.921% 2-qubit gate fidelity”. Corrected 99.92% to the exact source figure; remaining specifications found in fetched release."}
+{"id": "2025-11-01-samsung-sf2-mass-production", "result": "unverifiable", "note": "Samsung URL returned a page-not-found page; production-start claim could not be checked."}
+{"id": "2025-11-06-mit-graphene-v-gap", "result": "verified", "note": "MIT News article reports a V-shaped superconducting gap in magic-angle graphene as evidence of unconventional superconductivity."}
+{"id": "2025-11-17-itu-2-2-billion-offline", "result": "verified", "note": "ITU release says 2.2bn people remained offline in 2025, down from a revised 2.3bn estimate in 2024."}
+{"id": "2025-11-17-itu-5g-3-billion", "result": "unverifiable", "note": "Fetched ITU release did not state the claimed worldwide 5G subscription total."}
+{"id": "2025-11-17-itu-6-billion-online", "result": "corrected", "note": "Quotes: “6 billion people” and “grew by more than 240 million people in 2025”. Removed unsupported 74% and 71% shares."}
+{"id": "2025-11-17-itu-digital-divide", "result": "unverifiable", "note": "Fetched ITU release did not expose the specific income/urban/rural percentage breakdowns in this claim."}
+{"id": "2025-11-17-itu-users-2015-2025", "result": "unverifiable", "note": "Fetched ITU release supports 2025 and 2024 totals but did not provide the 2015 and 2020 series."}
+{"id": "2025-12-01-bisc-chip", "result": "unverifiable", "note": "ScienceDaily URL returned no readable article text; electrode and transmission specifications could not be checked."}
+{"id": "2025-12-01-intel-18a-hvm", "result": "corrected", "note": "Quote: “Intel aims to find clients” (headline). Removed unsupported D0 figure; retained the article’s explicitly qualified lack of evidence."}
+{"id": "2025-12-01-us-6g-memorandum", "result": "verified", "note": "White House page is titled “Winning the 6G Race” and identifies it as a presidential memorandum NSPM-8."}
+{"id": "2025-12-30-tsmc-2nm-mass-production", "result": "unverifiable", "note": "TSMC page returned a JavaScript challenge and did not establish the stated 30 December start, Fab 22, or 15 customers."}
+{"id": "2025-12-01-precision-510k", "result": "unverifiable", "note": "Fetched Nature article is about Paradromics clinical trials and does not support Precision Neuroscience 510(k) clearance."}

@@ -1,0 +1,298 @@
+[
+ {
+  "section": "climate",
+  "id": "2024-01-01-wmo-long-term-warming-1-3-1-4c-rv",
+  "status": "corrected",
+  "figures_not_found": [
+   1.3
+  ]
+ },
+ {
+  "section": "climate",
+  "id": "2025-01-01-cdr-fyi-capture-capacity-gap-rv",
+  "status": "verified",
+  "figures_not_found": [
+   0.01,
+   41.0,
+   10000.0
+  ]
+ },
+ {
+  "section": "climate",
+  "id": "2025-09-25-china-2035-ndc-rv",
+  "status": "verified",
+  "figures_not_found": [
+   10.0
+  ]
+ },
+ {
+  "section": "climate",
+  "id": "2025-11-01-noaa-mlo-co2-nov-2025-rv",
+  "status": "verified",
+  "figures_not_found": [
+   426.5
+  ]
+ },
+ {
+  "section": "climate",
+  "id": "2025-11-13-gcb-2025-china-share-rv",
+  "status": "verified",
+  "figures_not_found": [
+   32.0
+  ]
+ },
+ {
+  "section": "climate",
+  "id": "2025-11-13-gcb-2025-fossil-co2-record-rv",
+  "status": "verified",
+  "figures_not_found": [
+   37.8
+  ]
+ },
+ {
+  "section": "fusion",
+  "id": "2025-01-01-quaise-100m-granite-rv",
+  "status": "verified",
+  "figures_not_found": [
+   20.0
+  ]
+ },
+ {
+  "section": "fusion",
+  "id": "2025-07-01-fia-2025-investment-rv",
+  "status": "corrected",
+  "figures_not_found": [
+   10.0,
+   77.0
+  ]
+ },
+ {
+  "section": "health",
+  "id": "2019-01-01-who-global-hale-trend-2000-2019-rv",
+  "status": "corrected",
+  "figures_not_found": [
+   0.28
+  ]
+ },
+ {
+  "section": "health",
+  "id": "2024-04-16-newlimit-130m-series-b-rv",
+  "status": "corrected",
+  "figures_not_found": [
+   130.0
+  ]
+ },
+ {
+  "section": "health",
+  "id": "2025-01-01-nhs-uk-dementia-prevalence-80-plus-rv",
+  "status": "verified",
+  "figures_not_found": [
+   17.0
+  ]
+ },
+ {
+  "section": "health",
+  "id": "2025-01-26-fda-leqembi-iv-maintenance-dosing-rv",
+  "status": "verified",
+  "figures_not_found": [
+   26.0
+  ]
+ },
+ {
+  "section": "health",
+  "id": "2025-08-28-fda-leqembi-earlier-mri-monitoring-rv",
+  "status": "verified",
+  "figures_not_found": [
+   6.0
+  ]
+ },
+ {
+  "section": "knowledge-beyond",
+  "id": "2025-12-01-precision-510k-rv",
+  "status": "corrected",
+  "figures_not_found": [
+   510.0
+  ]
+ },
+ {
+  "section": "knowledge-beyond",
+  "id": "2025-07-01-gemini-deep-think-imo-gold-rv",
+  "status": "verified",
+  "figures_not_found": [
+   5.0,
+   6.0
+  ]
+ },
+ {
+  "section": "knowledge-beyond",
+  "id": "2025-11-01-quantinuum-helios-launch-rv",
+  "status": "verified",
+  "figures_not_found": [
+   99.92
+  ]
+ },
+ {
+  "section": "knowledge-beyond",
+  "id": "2025-11-17-itu-6-billion-online-rv",
+  "status": "corrected",
+  "figures_not_found": [
+   74.0
+  ]
+ },
+ {
+  "section": "knowledge-beyond",
+  "id": "2025-12-01-intel-18a-hvm-rv",
+  "status": "corrected",
+  "figures_not_found": [
+   0.4
+  ]
+ },
+ {
+  "section": "robots-hardware",
+  "id": "2024-11-01-fukushima-first-debris-sample-rv",
+  "status": "corrected",
+  "figures_not_found": [
+   0.19
+  ]
+ },
+ {
+  "section": "robots-hardware",
+  "id": "2025-01-01-digit-runtime-cost-specs-rv",
+  "status": "verified",
+  "figures_not_found": [
+   250000.0
+  ]
+ },
+ {
+  "section": "robots-hardware",
+  "id": "2025-01-01-fourier-series-e-109m-rv",
+  "status": "verified",
+  "figures_not_found": [
+   109.0
+  ]
+ },
+ {
+  "section": "robots-hardware",
+  "id": "2025-01-01-fukushima-debris-total-0-9g-rv",
+  "status": "verified",
+  "figures_not_found": [
+   0.9
+  ]
+ },
+ {
+  "section": "robots-hardware",
+  "id": "2025-01-01-openvla-oft-faster-inference-rv",
+  "status": "verified",
+  "figures_not_found": [
+   16.5
+  ]
+ },
+ {
+  "section": "robots-hardware",
+  "id": "2025-01-01-tracxn-humanoid-funding-2025-rv",
+  "status": "verified",
+  "figures_not_found": [
+   1.71
+  ]
+ },
+ {
+  "section": "robots-hardware",
+  "id": "2025-01-01-unitree-g1-13500-rv",
+  "status": "verified",
+  "figures_not_found": [
+   13500.0
+  ]
+ },
+ {
+  "section": "robots-hardware",
+  "id": "2025-01-01-unitree-r1-5900-rv",
+  "status": "verified",
+  "figures_not_found": [
+   5900.0
+  ]
+ },
+ {
+  "section": "robots-hardware",
+  "id": "2025-07-03-hyundai-georgia-atlas-from-october-rv",
+  "status": "verified",
+  "figures_not_found": [
+   25.0,
+   140000.0
+  ]
+ },
+ {
+  "section": "robots-hardware",
+  "id": "2025-12-15-irobot-bankruptcy-rv",
+  "status": "verified",
+  "figures_not_found": [
+   11.0,
+   15.0
+  ]
+ },
+ {
+  "section": "robots-software",
+  "id": "2025-12-01-simular-agent-s-osworld-beats-human-rv",
+  "status": "verified",
+  "figures_not_found": [
+   72.4
+  ]
+ },
+ {
+  "section": "rockets",
+  "id": "2025-01-01-guowang-12-batches-rv",
+  "status": "verified",
+  "figures_not_found": [
+   13000.0
+  ]
+ },
+ {
+  "section": "rockets",
+  "id": "2025-01-01-mars-mission-dose-estimate-rv",
+  "status": "verified",
+  "figures_not_found": [
+   0.34,
+   0.6,
+   1.2
+  ]
+ },
+ {
+  "section": "rockets",
+  "id": "2025-03-06-im-2-lands-tips-over-rv",
+  "status": "verified",
+  "figures_not_found": [
+   86.0
+  ]
+ },
+ {
+  "section": "rockets",
+  "id": "2025-10-21-esa-space-environment-report-rv",
+  "status": "corrected",
+  "figures_not_found": [
+   54000.0
+  ]
+ },
+ {
+  "section": "society-cohesion",
+  "id": "2022-01-01-owid-global-interpersonal-trust-rv",
+  "status": "verified",
+  "figures_not_found": [
+   30.0
+  ]
+ },
+ {
+  "section": "society-cohesion",
+  "id": "2025-01-01-aarp-loneliness-45-plus-40-rv",
+  "status": "verified",
+  "figures_not_found": [
+   38.0
+  ]
+ },
+ {
+  "section": "society-cohesion",
+  "id": "2025-09-11-ftc-inquiry-ai-companions-rv",
+  "status": "verified",
+  "figures_not_found": [
+   7.0
+  ]
+ }
+]
