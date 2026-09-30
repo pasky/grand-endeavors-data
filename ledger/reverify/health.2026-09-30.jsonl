@@ -29,7 +29,7 @@
 {"id": "2025-01-01-juvenescence-76m-raise", "result": "corrected", "note": "The checked article identifies the financing as Series D, not Series B-1; retained only the source-supported round and amount."}
 {"id": "2025-01-01-manchester-melanoma-immunotherapy-resistance", "result": "unverifiable", "note": "Fetched source text does not establish the claim as stated."}
 {"id": "2025-01-01-mrna-4157-v940-melanoma-phase-3", "result": "unverifiable", "note": "Fetched source text does not establish the claim as stated."}
-{"id": "2025-01-01-newlimit-130m-series-b", "result": "corrected", "note": "TechCrunch dates the Series B to April 2024, not 2025; corrected the event date and claim to the source date."}
+{"id": "2025-01-01-newlimit-130m-series-b", "result": "unverifiable", "note": "The TechCrunch URL currently returns a 404 page; source cannot verify the core funding claim."}
 {"id": "2025-01-01-nhs-galleri-trial-enrollment", "result": "unverifiable", "note": "Fetched source text does not establish the claim as stated."}
 {"id": "2025-01-01-nhs-uk-dementia-prevalence-80-plus", "result": "corrected", "note": "Quote: “1 in every 6 people over the age of 80”. Corrected dementia to Alzheimer’s disease and removed the unsupported ~17% conversion."}
 {"id": "2025-01-01-nia-itp-20-year-review", "result": "unverifiable", "note": "Fetched source text does not establish the claim as stated."}
@@ -76,4 +76,3 @@
 {"id": "2025-12-01-ons-uk-life-expectancy-2022-2024", "result": "verified", "note": "ONS bulletin provides life-expectancy figures for 2022–24."}
 {"id": "2025-12-01-retro-rtr242-first-patient-dosed", "result": "unverifiable", "note": "Fetched source text does not establish the claim as stated."}
 {"id": "2025-12-01-wireless-bci-65000-electrodes", "result": "unverifiable", "note": "Fetched source text does not establish the claim as stated."}
-{"id": "2024-04-16-newlimit-130m-series-b", "result": "unverifiable", "note": "The TechCrunch URL currently returns a 404 page; source cannot verify the core funding claim."}

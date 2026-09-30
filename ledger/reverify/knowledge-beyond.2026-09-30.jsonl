@@ -36,7 +36,7 @@
 {"id": "2025-02-19-microsoft-majorana-1", "result": "verified", "note": "Microsoft’s 19 February announcement calls Majorana 1 its first topological-core processor and describes a path to one million qubits."}
 {"id": "2025-03-01-hilbert-sixth-problem", "result": "corrected", "note": "arXiv record shows the paper was submitted 3 March 2025 and rigorously derives fluid equations via Boltzmann kinetic theory, not directly from Newton’s laws."}
 {"id": "2025-04-01-fda-zevaskyn", "result": "verified", "note": "FDA ZEVASKYN page confirms approval for recessive dystrophic epidermolysis bullosa in April 2025."}
-{"id": "2025-04-01-precision-510k", "result": "corrected", "note": "Nature article dates the FDA 510(k) clearance to December 2025, not April."}
+{"id": "2025-04-01-precision-510k", "result": "unverifiable", "note": "Fetched Nature article is about Paradromics clinical trials and does not support Precision Neuroscience 510(k) clearance."}
 {"id": "2025-05-01-fda-yutrepia", "result": "unverifiable", "note": "FDA general news page did not address Yutrepia approval or the claimed PRINT technology."}
 {"id": "2025-05-01-first-personalized-crispr", "result": "unverifiable", "note": "NEJM URL returned a JavaScript challenge; the patient and treatment details could not be checked."}
 {"id": "2025-06-01-3gpp-6g-studies", "result": "unverifiable", "note": "Ericsson source returned a JavaScript challenge, so it did not provide evidence for the claimed June initiation."}
@@ -67,4 +67,3 @@
 {"id": "2025-12-01-intel-18a-hvm", "result": "corrected", "note": "Quote: “Intel aims to find clients” (headline). Removed unsupported D0 figure; retained the article’s explicitly qualified lack of evidence."}
 {"id": "2025-12-01-us-6g-memorandum", "result": "verified", "note": "White House page is titled “Winning the 6G Race” and identifies it as a presidential memorandum NSPM-8."}
 {"id": "2025-12-30-tsmc-2nm-mass-production", "result": "unverifiable", "note": "TSMC page returned a JavaScript challenge and did not establish the stated 30 December start, Fab 22, or 15 customers."}
-{"id": "2025-12-01-precision-510k", "result": "unverifiable", "note": "Fetched Nature article is about Paradromics clinical trials and does not support Precision Neuroscience 510(k) clearance."}
