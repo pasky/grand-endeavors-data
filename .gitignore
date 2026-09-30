@@ -1,0 +1,5 @@
+# in-flight gather output and pi sessions (provenance lives in commits + manifests)
+ledger/staging/
+ledger/.sessions/
+*/.sessions/
+ledger/.lock-*
