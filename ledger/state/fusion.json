@@ -1,0 +1,19 @@
+{
+ "section": "fusion",
+ "items": {
+  "kpi": "2026-09-30"
+ },
+ "runs": [
+  {
+   "run": "20261001T070858Z",
+   "since": "2015-01-01",
+   "until": "2026-09-30",
+   "items": [
+    "kpi"
+   ],
+   "staged_events": 13,
+   "spec_commit": "manual-record: run aborted at assess (fixed in mechanism)",
+   "pi": "0.87.1"
+  }
+ ]
+}
