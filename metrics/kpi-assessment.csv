@@ -3,3 +3,4 @@ climate,co2-trend-10yr-mlo-jan-dec,down,10 years (ENSO cycle); compare current 1
 robots-software,metr-80-horizon-by-release,up,2 years / >= 4 frontier points,sustain the long-run doubling time (~7 months),3,METR (Kwa et al. 2025) long-run doubling time
 rockets,cost-to-leo-best,down,5 years,long-run decline of the best $/kg (own trend),3,own series (CSIS/JSR-based cost history)
 health,hale-median-country,up,5 years,own pre-2019 long-run trend (compute from the series; for reference WHO global pop-weighted HALE rose ~+0.28 yr/yr 2000-2019),3,WHO Global Health Estimates
+fusion,elec-price-household-world-popw-real,down,5 years (or all available if shorter); compare first vs second half of the window,own long-run trend (tier 3) until a milestone-implied path exists,3,own series
