@@ -12,7 +12,7 @@ framework (framework.yaml). The published view is https://pasky.or.cz/grand-ende
     ledger/observations/<section>.csv    KPI datapoints (collectors + verified intake)
     ledger/assessments/<section>.jsonl   milestone/KPI status judgments (gather/RUBRIC.md)
     ledger/rejected/, ledger/state/      failed-verification records; gather watermarks
-    metrics/                             metric registry + per-KPI assessment spec
+    metrics/                             metric registry (+ lag-history.csv) + per-KPI assessment spec
     pilot-<period>/                      bulletins, frozen snapshots, gaps, manifests; the frozen
                                          period page index.html + the framework.yaml in force
 
