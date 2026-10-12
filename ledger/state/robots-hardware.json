@@ -1,0 +1,25 @@
+{
+ "section": "robots-hardware",
+ "items": {
+  "milestone:the-wozniak-test": "2026-10-12",
+  "milestone:the-fukushima-test": "2026-10-12",
+  "milestone:the-blue-collar-shift": "2026-10-12",
+  "milestone:the-dark-line": "2026-10-12"
+ },
+ "runs": [
+  {
+   "run": "20261012T144115Z",
+   "since": "2024-01-01",
+   "until": "2026-10-12",
+   "items": [
+    "milestone:the-wozniak-test",
+    "milestone:the-fukushima-test",
+    "milestone:the-blue-collar-shift",
+    "milestone:the-dark-line"
+   ],
+   "staged_events": 55,
+   "spec_commit": "bced2ba851db64936c9493d3bf811ea0ee350728",
+   "pi": "1.1.0"
+  }
+ ]
+}
