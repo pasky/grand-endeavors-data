@@ -9,9 +9,9 @@ co2-trend-10yr-mlo-scripps,ppm/yr,irregular,,,,"Met Office-reported decadal aver
 co2-trend-2020s-mlo-scripps,ppm/yr,irregular,,,,Met Office-reported average growth of Scripps Mauna Loa annual-mean CO2 over the 2020s so far (from 2020 to the obs year)
 co2-mlo-annual,ppm,annual,10,,,NOAA GML Mauna Loa calendar-year annual mean CO2 (co2_annmean_mlo.txt)
 co2-global-annual,ppm,annual,10,,,NOAA GML global marine-surface calendar-year annual mean CO2 (co2_annmean_gl.txt)
-co2-global-monthly,ppm,monthly,7,,,NOAA GML global marine-surface monthly mean CO2 (co2_mm_gl.txt)
+co2-global-monthly,ppm,monthly,70,,,NOAA GML global marine-surface monthly mean CO2 (co2_mm_gl.txt)
 co2-mlo-daily,ppm,daily,2,,,NOAA GML Mauna Loa daily mean CO2 (co2_daily_mlo.txt)
-co2-mlo-monthly-scripps,ppm,monthly,7,,,"Scripps (UCSD) Mauna Loa monthly mean CO2, Scripps program series (distinct from NOAA's MLO series)"
+co2-mlo-monthly-scripps,ppm,monthly,35,,,"Scripps (UCSD) Mauna Loa monthly mean CO2, Scripps program series (distinct from NOAA's MLO series; monthly_in_situ_co2_mlo.csv, standard monthly mean column)"
 co2-growth-mlo-jan-dec,ppm/yr,annual,10,,,NOAA MLO annual CO2 growth rate: Jan 1 -> Dec 31 change of that year (co2_gr_mlo.txt)
 co2-growth-global-jan-dec,ppm/yr,annual,10,,,NOAA global marine-surface annual CO2 growth rate: Jan 1 -> Dec 31 change of that year (co2_gr_gl.txt)
 co2-growth-mlo-annual-mean,ppm/yr,annual,10,,,NOAA MLO annual-mean increment: that year's annual mean minus the previous year's annual mean
