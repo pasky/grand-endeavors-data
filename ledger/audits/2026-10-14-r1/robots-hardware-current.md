@@ -1,0 +1,30 @@
+# Hardware ETA audit — 2026-10-13
+
+Scope: latest Wozniak/Fukushima/Dark Line records (`assess:20261013T073431Z`), their notes, effective event claims, METR series, framework, complete RUBRIC v4, and robotaxi/Blue Collar run `20261013T132619Z`.
+
+**Conclusion:** Yellow appropriately avoids claiming achievement, but the 2028/2028/2030 medians are assumption-driven scenarios, not well-calibrated forecasts. The equations mostly work; their empirical mappings do not.
+
+## Ledger spot-checks
+
+- `2026-08-27-dyna-din-tai-fung-shift-throughput`: quality passes 75%→93%, June 2025→August 2026. Failure-fraction halving is correctly 14·ln2/ln(25/7)=7.62 months; these are rejected napkins, not robot failures/interventions.
+- `2026-09-17-figure-helix-25-30-homes`: 56% full-task success in 30 unseen homes is correct, but covers three chores, not coffee.
+- `2026-04-18-beijing-robot-warrior-challenge-tien-kung-autonomous`: 17 obstacles, 12-minute limit, eight autonomous-navigation rounds check out. Valve completion is unreported—not eight measured failures.
+- `metr-80-horizon-by-release --as-of 2026-10-13`: 4.42 minutes (2024-09-12), 185.91 (2026-04-07) match. The later interval is correctly treated as unmeasured, not flat.
+
+## Findings and fixes
+
+1. **MILESTONE — MAJOR: shared driver measures the wrong failure.** Dyna’s quality rejection fraction is transferred without calibration to unseen-home success, disaster-repair odds, and hardware MTBF. Calling it the most current comparable outcome does not establish comparability. Failure odds actually halve in 6.52 months, not 7.62; MTBF requires failures per operating hour. The central transferability assumption is the largest shared crux. Fix: obtain longitudinal matched-task/home trials and intervention-hour logs; separately model quality, recovery and breakdowns. Until then label the transfer elicited, not measured.
+
+2. **MILESTONE — MAJOR: Wozniak forecasts a probability threshold, not first success.** Coffee p0=25% (10–45%), 0.3-year lag, LEAP mapping and 75/25 mixture weight are elicited. “Published within weeks” does not measure development-to-publication delay. Holding other point inputs fixed, p0 endpoints give 2027.18–2029.01 versus 2028.01. Most consequential is the implicit attempt schedule: three independent attempts at 25% already give 58% chance of success, without waiting for 50% per-attempt capability. Fix: model independently selected homes and dated attempts, as Fukushima does. LEAP’s three-home test also does not imply 95% per-home reliability: a 50% joint-success threshold implies 79.4% under independence. The 95% choice overstates the trend-to-LEAP difficulty gap by 1.46 years; remap and rerun the mixture.
+
+3. **MILESTONE — MAJOR: Fukushima invents both baseline and opportunities.** q0=20%, annual April recurrence, autumn opportunity probability 0.4 and April eligibility 0.7 are not measured. Unreported repair outcomes cannot estimate q0. Holding other central inputs fixed, q0=5–40% moves the unconditional first-success median roughly April 2029–autumn 2027. Biggest crux: recurring venues actually offering a qualifying repair. Fix: gather rules/schedules, human comparison times and attempt-level repair results; model navigation-plus-repair jointly. The reported p90=2031 is manually widened from 2030.3 outside the simulation; incorporate that uncertainty into the distribution.
+
+4. **MILESTONE — MAJOR: Dark Line’s recovery assumption hides missing capabilities.** The 1,680 robot-hour calculation and Poisson target 2,424 hours are correct under independent constant hazards. Ten robots, 20-hour baseline MTBF, 90% fault absorption and one-year integration lag are elicited; collision reports establish difficulty, not its duration. Biggest discrete assumption: 90% recovery without human entry. Removing it moves the point ETA 2029.79→2031.90. The stipulated 4–14-month halving range alone spans 2028.70–2031.70. Fix: model finite spares, common failures, throughput, robot maintenance and software changeover separately; measure recovery rates rather than assigning them.
+
+5. **DEFINITION — MAJOR:** Owner decisions remain: Wozniak’s home-selection distribution, permitted preparation/maps and retries; Fukushima’s human-time comparator and unscripted-site protocol; Dark Line’s general-purpose boundary and off-floor teleoperation allowance. Fix: explicit acceptance protocols, not probabilistic mixtures over meanings. Robotaxi’s L5/denominator ambiguity is the same issue.
+
+6. **RUBRIC-WIDE — MAJOR:** Require executable forecast artifacts, parameter provenance, sensitivity tables and shared-driver versions. N/seed plus prose cannot reproduce unspecified distributions/dependencies. Correct unconditional conversion is used, including Dark Line’s null p90, but 0.97/0.95/0.88 are uncalibrated elicitation. Their stated median shifts are 0.05/approximately 0/0.40 years. Elicit named failure scenarios with calibrated weights and vary those weights explicitly. Blue Collar repeats the invalid Dyna transfer; robotaxi uses rides instead, not METR. Neither establishes transfer validity. Dark Line later than Blue Collar is plausible, but they need consistent failure definitions and correlated driver uncertainty. The later run changes Blue Collar’s baseline to 1.2 interventions/shift and chance to 0.92 without new evidence—assessor variability, not measured progress.
+
+7. **RUBRIC-WIDE — minor:** Both runs discard or replace simulated past achievements merely because no qualifying event is recorded. A missing report is not proof of nonachievement. Fix: distinguish physical achievement from verified disclosure, specify the observation process, and condition on actual negative evidence rather than silently censoring time samples.
+
+8. **MILESTONE — minor:** No selected evidence IDs are superseded/withdrawn. However Fukushima calls Gemini scores “unseen-object”; corrected `2026-07-30-gemini-robotics-2-humanoid-scores` explicitly leaves novelty unspecified. Remove that support. Dark Line’s July `data_as_of` also predates its August driver and September evidence; distinguish baseline, driver and context dates.
