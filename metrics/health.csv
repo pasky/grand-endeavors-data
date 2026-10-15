@@ -1,3 +1,4 @@
 metric,unit,cadence,release_lag_days,required_from,retired_after,definition
 hale-global,years,irregular,,,,WHO Global Health Estimates population-weighted global healthy life expectancy (HALE) at birth for the obs year
 hale-median-country,years,irregular,,pilot-26H1,,"Median across countries of WHO Global Health Estimates healthy life expectancy (HALE) at birth, both sexes, for the obs year (the README KPI; unweighted by population)"
+manifold-60n0viotdzfv1f9jmm1q-p,probability,weekly,,,,"Manifold market 60N0viOTdZfv1F9jMM1Q community probability (0-1) that a therapy that substantially slows down or reverses human aging is developed before 2040 (event by 2039-12-31); anchor (similar) for milestone:the-long-middle-age; as of the obs date; collected by gather/collectors/anchors.py, forecasters=unique bettors in the note"

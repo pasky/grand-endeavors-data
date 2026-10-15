@@ -21,3 +21,26 @@ commercial fusion electricity by 2035, 11 bettors (thin); Manifold iuBCRicRjrIzU
 engineering breakeven by 2040, 56 bettors). All other candidates were rejected (resolution
 criteria that neither imply nor are implied by the milestone wording) or unverifiable (Metaculus,
 no API access); 17 of 18 milestones have no anchor yet.
+
+## Addendum: `similar` anchors (same day)
+
+The owner added a fourth relation, `similar`: the same underlying capability or outcome under
+resolution criteria that neither imply nor are implied by ours, compared at wider thresholds
+(10 years / 0.35) with a note on the wording differences. A second deep-mode review
+(`similar-review.md`, `similar-verdicts.json`) re-examined the rejected candidates (Manifold
+binary markets only) and searched briefly for more. Accepted as `similar`:
+- robots-hardware/the-wozniak-test: Manifold 92RpIcOUn9 (Coffee Test before 2029, 27 bettors)
+  and ZA8292N5QC (before 2027, 23 bettors);
+- health/the-long-middle-age: Manifold 60N0viOTdZfv1F9jMM1Q (a therapy that substantially slows
+  or reverses human ageing before 2040, 27 bettors);
+- rockets/the-homestead: Manifold InfkbfL3uNM9GNq9qgKy (a relatively self-sustaining
+  extraterrestrial colony before 2050, 53 bettors).
+Rejected again: the CO2-peak, net-zero, one-person-unicorn and lunar-base markets, among others.
+Coverage: 5 of 20 milestones.
+
+**Finding for re-assessment (AUDIT=2026-10-15-anchors):** these three milestones now have
+anchors (framework.yaml; `ledger.py anchors <section>`). Their current v6 forecasts were made
+without reading them: state that forecast as the pre-anchor p50 in the notes, then compare it
+with the anchors under RUBRIC.md §4.1 step 4 (discuss the wording differences of each similar
+anchor and explain any gap; do not move the forecast toward a market without a reason you would
+accept without it).
