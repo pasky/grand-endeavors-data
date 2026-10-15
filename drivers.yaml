@@ -1,0 +1,146 @@
+# Shared ETA drivers (gather/RUBRIC.md §4.1 step 2, rubric v6): one fitted distribution per
+# quantity that several milestone ETAs rest on. Every milestone in a driver's used_by samples its
+# draws (uv run core/ledger.py driver-draws <driver> [--as-of D]) instead of fitting the driver
+# itself, so milestones sharing a driver agree on it draw by draw. Schema: core/drivers.py.
+# Changing a fit here is a reviewed data edit; ledger.py check validates the file.
+#
+# Fitted 2026-10-15 from the ledger (series/events below), carrying over the central fits and
+# spreads that the 2026-10-14 ETA audit (ledger/audits/2026-10-14-r1, -r2 cross-section.md)
+# converged on; only the parts labelled measured are measured.
+seed: 20261015
+n: 10000
+as_of: 2026-10-15
+drivers:
+  metr-horizon:
+    description: >-
+      METR task horizons of the release-cohort frontier (minutes of human expert time at 50% and
+      80% success) and their doubling times.
+    used_by:
+      - robots-software/the-linux-kernel-patch
+      - robots-software/the-nature-author
+      - robots-software/the-10m-solopreneur
+    sources:
+      series: [robots-software/metr-50-horizon-by-release, robots-software/metr-80-horizon-by-release]
+    window: >-
+      current fit: dated points from 2024-10-15 to the last point 2026-04-07 (50%: 10 points,
+      80%: 9 points; month-only duplicates dropped); long-run fit: 2019-02-14 to 2026-04-07.
+    fit: >-
+      Log-linear OLS of log2(horizon) on time. Measured: the anchors (last points, 2026-04-07) and
+      the fitted doubling times (50%: 3.453 mo current, 5.969 mo long-run; 80%: 4.086 mo current,
+      6.365 mo long-run). Assumed: the forecast spread around them, a split lognormal whose median
+      is the current fit and whose p90 is the long-run fit (RUBRIC §4.1 step 3: the slower long-run
+      rate is the p90 case); p10 as in the audited 2026-10-14 models. The two doubling times are
+      drawn comonotonic (one latent pace). Mapping task horizons onto a milestone is each
+      milestone's own assumption (step 3), not part of this driver.
+    params:
+      h50_min: {dist: fixed, value: 1044.78, label: measured (metr-50-horizon-by-release 2026-04-07)}
+      h80_min: {dist: fixed, value: 185.91, label: measured (metr-80-horizon-by-release 2026-04-07)}
+      anchor_year: {dist: fixed, value: 2026.264, label: measured (2026-04-07 as a decimal year)}
+      doubling_50_months: {dist: lognormal, p10: 2.53, p50: 3.45, p90: 5.97, label: p50 and p90 measured fits, spread assumed}
+      doubling_80_months: {dist: lognormal, p10: 3.11, p50: 4.09, p90: 6.36, couple: doubling_50_months, label: p50 and p90 measured fits, spread assumed}
+  dyna-failure-halving:
+    description: >-
+      Dyna Robotics' production robot: quality-failure (reject) fraction 25% (June 2025) to 7%
+      (August 2026), the only measured within-deployment robot failure trend in the ledger; used
+      as an assumed transfer to robot intervention and failure rates.
+    used_by:
+      - robots-hardware/the-blue-collar-shift
+      - robots-hardware/the-dark-line
+      - robots-hardware/the-fukushima-test
+      - robots-hardware/the-wozniak-test
+    sources:
+      events: [2026-08-27-dyna-din-tai-fung-shift-throughput]
+    window: 2025-06 to 2026-08 (14 months, two points)
+    fit: >-
+      Two-point exponential fits over 14 months. Measured: fraction halving time 14 ln2 / ln(25/7)
+      = 7.623 mo; failure-odds halving 14 ln2 / ln(93/21) = 6.521 mo; throughput (480 to 1,590
+      napkins per 18-hour shift) doubling 14 ln2 / ln(1590/480) = 8.102 mo. Assumed: the spread
+      (two points identify no residual variance; split lognormal p10 4 mo, p90 14 mo, as audited
+      2026-10-14), that odds and throughput move with the fraction rate (derived params scale the
+      same draw), and every transfer to another robot's interventions or failures.
+    params:
+      halving_months: {dist: lognormal, p10: 4.0, p50: 7.623, p90: 14.0, label: p50 measured, spread assumed}
+      odds_halving_months: {dist: derived, expr: "halving_months * log(25 / 7) / log(93 / 21)", label: ratio measured, coupling assumed}
+      throughput_doubling_months: {dist: derived, expr: "halving_months * log(25 / 7) / log(1590 / 480)", label: ratio measured, coupling assumed}
+  irena-lcoe:
+    description: >-
+      IRENA global weighted-average LCOE decline rates of newly commissioned renewables (log
+      decline per year), the learning analogue for fusion plant costs.
+    used_by:
+      - fusion/grid-parity
+    sources:
+      series: [fusion/lcoe-solar-pv-irena, fusion/lcoe-onshore-wind-irena, fusion/lcoe-offshore-wind-irena]
+      events: [2024-01-01-irena-lcoe-solar-2024, 2024-01-01-irena-lcoe-onshore-wind-2024, 2024-01-01-irena-lcoe-offshore-wind-2024]
+    window: full 2010-2024 (6 points each; the central fit); recent 2020-2024 (3 points; a sensitivity)
+    fit: >-
+      Log-linear OLS of ln(LCOE) on year. Measured: offshore 0.076107/yr (2010-24), 0.029797/yr
+      (2020-24); onshore 0.091061 / 0.034300; PV 0.162935 / 0.061533. Offshore wind is the
+      analogue (a large, slow-built, capital-heavy plant). Assumed: the spread (lognormal, sdlog
+      0.55, as audited 2026-10-14) and the transfer to fusion; the recent-regime rate is a
+      sensitivity, not part of the draw. A temporal price trend is not a measured Wright learning
+      rate (no capacity data in the ledger).
+    params:
+      r_offshore: {dist: lognormal, p50: 0.076107, sdlog: 0.55, label: p50 measured, spread and transfer assumed}
+      r_offshore_recent: {dist: fixed, value: 0.029797, label: measured (2020-24), sensitivity}
+      r_onshore: {dist: fixed, value: 0.091061, label: measured (2010-24), comparator}
+      r_pv: {dist: fixed, value: 0.162935, label: measured (2010-24), comparator}
+  fossil-co2-deceleration:
+    description: >-
+      Deceleration of global fossil CO2 emissions growth: the per-year decline of the decadal
+      mean log growth rate (Global Carbon Budget fossil + cement).
+    used_by:
+      - climate/the-bend
+      - climate/the-balance
+      - climate/the-ceiling
+    sources:
+      series: [climate/co2-emissions-fossil-gcb]
+      events: [2026-05-13-gcb-2025-total-co2-slightly-lower]
+    window: decades 1995-2005, 2005-2015, 2015-2025 (23.26, 29.19, 34.71, 38.1 Gt)
+    fit: >-
+      Decadal mean log growth 2.2709%/yr (1995-2005), 1.7320%/yr (2005-15), 0.9319%/yr (2015-25,
+      midpoint 2020). Measured: the curvature a = (1.7320% - 0.9319%) / 10 yr = 0.00080015 /yr^2
+      (the last two decades). Assumed: the spread (lognormal, sdlog 0.50, as audited 2026-10-14).
+      Fossil growth at time t is g(t) = 0.0093186 - a (t - 2020). Land use, non-CO2 gases and
+      removals are each milestone's own inputs.
+    params:
+      a_per_yr2: {dist: lognormal, p50: 0.00080015, sdlog: 0.50, label: p50 measured, spread assumed}
+      g_2020: {dist: fixed, value: 0.0093186, label: measured (2015-2025 mean log growth)}
+      fossil_2025_gt: {dist: fixed, value: 38.1, label: measured (co2-emissions-fossil-gcb 2025)}
+  launch-mass:
+    description: Annual payload mass launched to Earth orbit worldwide (tonnes) and its log growth rate.
+    used_by:
+      - rockets/the-deluge
+    sources:
+      series: [rockets/payload-mass-to-orbit]
+      events: [2025-01-01-jsr-payload-mass-2025-rv2]
+    window: 2021-2025 (797.4, 1046.4, 1462.8, 2625.9, 3194.0 t)
+    fit: >-
+      Log-linear OLS of ln(mass) on year 2021-25: slope 0.3695/yr (+44.7%/yr, doubling 1.88 yr),
+      measured. Assumed: the split-normal forecast spread of the slope (p10 0.20 = +22%/yr, p90
+      0.47 = +60%/yr, as audited 2026-10-14). Older windows (2016-25 +30%/yr, 2011-25 +14.7%/yr)
+      are regimes for failure scenarios, not slope noise.
+    params:
+      mass_2025_t: {dist: fixed, value: 3194.0, label: measured}
+      log_slope: {dist: normal, p10: 0.20, p50: 0.3695, p90: 0.47, label: p50 measured, spread assumed}
+  fusion-first-watt:
+    description: >-
+      Start of the first commercial fusion plant's grid operation (decimal year; inf = never by
+      2100), from discounted proponent schedules. First Watt adds its 3-month sustained-export
+      window; Grid Parity starts its cost clock here.
+    used_by:
+      - fusion/the-first-watt
+      - fusion/grid-parity
+    sources:
+      events: [2025-01-01-helion-2028-microsoft-target-rv, 2025-07-30-helion-orion-construction-rv, 2025-10-15-helion-reactor-building-permit-rv, 2025-01-01-cfs-sparc-arc-timeline-rv, 2025-08-28-cfs-series-b2-863m-rv, 2024-01-01-iter-baseline-2034-2039-rv]
+    window: proponent dates as of the assessment date (asof)
+    fit: >-
+      Sourced: the proponent dates (Helion 2028 for Microsoft; CFS ARC early 2030s, 2032.5).
+      Assumed (elicited, as audited 2026-10-14): route weights Helion path 0.50, ARC path 0.35, a
+      successor programme 0.08 (triangular 2040/2055/2080), never 0.07 (physics 0.03, funding
+      0.04); the schedule slip factor F (lognormal median 2, sdlog 0.40) stretches the time
+      remaining from asof, and no route starts before its proponent date.
+    params:
+      route: {dist: categorical, weights: {helion: 0.50, arc: 0.35, successor: 0.08, never: 0.07}, label: assumed}
+      slip_factor: {dist: lognormal, p50: 2.0, sdlog: 0.40, label: assumed}
+      successor_year: {dist: triangular, min: 2040, mode: 2055, max: 2080, label: assumed}
+      start: {dist: derived, expr: "max(2028, asof + (2028 - asof) * slip_factor) if route == 'helion' else max(2030, asof + (2032.5 - asof) * slip_factor) if route == 'arc' else successor_year if route == 'successor' else inf", label: model}

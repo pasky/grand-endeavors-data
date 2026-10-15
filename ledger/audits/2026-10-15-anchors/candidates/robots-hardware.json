@@ -1,0 +1,34 @@
+[
+  {
+    "milestone": "robots-hardware/the-wozniak-test",
+    "source": "manifold",
+    "id": "92RpIcOUn9",
+    "question_id": null,
+    "url": "https://manifold.markets/MatthewBarnett/will-a-robot-be-created-that-is-cap-NLNg8RtPug",
+    "title": "Will a robot be created that is capable of passing Steve Wozniak's \"The Coffee Test\" before 2029?",
+    "type": "binary",
+    "deadline": "2028-12-31",
+    "criteria": "YES if a robot is publicly and credibly documented to enter and navigate an unfamiliar home, locate and manipulate coffee tools/ingredients, and prepare coffee within 20 minutes; supporting public documentation and reporting are required.",
+    "status": "open",
+    "forecast": 0.8117,
+    "forecasters": 27,
+    "relation": "same",
+    "why": "Both ask for a robot to make coffee in an unfamiliar home; the market adds a 20-minute limit and documentation standard, while our milestone explicitly requires a random, developer-unselected home, no prior mapping, and no human help."
+  },
+  {
+    "milestone": "robots-hardware/the-wozniak-test",
+    "source": "manifold",
+    "id": "ZA8292N5QC",
+    "question_id": null,
+    "url": "https://manifold.markets/MatthewBarnett/will-a-robot-be-created-that-is-cap-l92Q228LNL",
+    "title": "Will a robot be created that is capable of passing Steve Wozniak's \"The Coffee Test\" before 2027?",
+    "type": "binary",
+    "deadline": "2026-12-31",
+    "criteria": "YES if a robot is publicly and credibly documented to enter and navigate an unfamiliar home, locate and manipulate coffee tools/ingredients, and prepare coffee within 20 minutes; supporting public documentation and reporting are required.",
+    "status": "open",
+    "forecast": 0.3329,
+    "forecasters": 23,
+    "relation": "same",
+    "why": "Both ask for a robot to make coffee in an unfamiliar home; the market adds a 20-minute limit and documentation standard, while our milestone explicitly requires a random, developer-unselected home, no prior mapping, and no human help."
+  }
+]

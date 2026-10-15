@@ -1,0 +1,50 @@
+[
+  {
+    "milestone": "robots-software/the-nature-author",
+    "source": "metaculus",
+    "id": "45167",
+    "question_id": null,
+    "url": "https://www.metaculus.com/questions/45167/will-a-published-paper-list-an-ai-author-before-2030/",
+    "title": "Will at least one paper published in Nature, Science, or Cell list an AI system as a formally credited author before January 1, 2030?",
+    "type": "binary",
+    "deadline": "2030-01-01",
+    "criteria": "At least one paper published in Nature, Science, or Cell formally credits an AI system as an author before 2030-01-01; this does not require AI to be primary author or to have originated and completed the research.",
+    "status": "open",
+    "forecast": {"probability": 0.8},
+    "forecasters": 18,
+    "relation": "weaker",
+    "why": "It allows any formally credited author role and includes Cell, unlike our milestone's AI-primary-authored paper in flagship Nature or Science with AI doing the research, so it is an easier event and a lower-bound signal."
+  },
+  {
+    "milestone": "robots-software/the-nature-author",
+    "source": "manifold",
+    "id": "t8UnRsQcOg",
+    "question_id": null,
+    "url": "https://manifold.markets/KalvinMizzi/will-an-ai-system-be-credited-as-th",
+    "title": "Will an AI system be credited as the lead author of a paper in Nature or Science before 1 January 2030?",
+    "type": "binary",
+    "deadline": "2030-01-01",
+    "criteria": "YES if, before 2030-01-01, a paper published in Nature or Science lists an AI system (not a person) as first or lead author, or the journal's editorial note describes it as primary author; otherwise NO.",
+    "status": "open",
+    "forecast": {"probability": 0.3175},
+    "forecasters": 3,
+    "relation": "same",
+    "why": "Lead/first/primary authorship in either flagship journal by the cutoff closely matches our event, although the market does not stipulate that AI generated the research and paper end-to-end as our details require."
+  },
+  {
+    "milestone": "robots-software/the-10m-solopreneur",
+    "source": "manifold",
+    "id": "dgfhEfuYxLHFBpV4zsKX",
+    "question_id": null,
+    "url": "https://manifold.markets/SimoneRomeo/will-there-be-a-oneperson-unicorn-b",
+    "title": "Will there be a one-person unicorn by 2030?",
+    "type": "binary",
+    "deadline": "2030-12-31",
+    "criteria": "By end of 2030, either a public company reaches $1B market capitalization with one funder and employee, or a one-person private company raises enough to be valued above $1B, reported by a reputable source; market clarifies that contractors are allowed and only one legal employee is permitted.",
+    "status": "open",
+    "forecast": {"probability": 0.5162},
+    "forecasters": 91,
+    "relation": "reject",
+    "why": "A one-person $1B valuation does not entail $10M annual recurring revenue or less than 10 human oversight hours per week, and the market's employee/funder criteria differ from our operating-company definition."
+  }
+]
