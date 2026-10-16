@@ -98,20 +98,22 @@ drivers:
       - fusion/grid-parity
     sources:
       series: [fusion/lcoe-solar-pv-irena, fusion/lcoe-onshore-wind-irena, fusion/lcoe-offshore-wind-irena]
-      events: [2024-01-01-irena-lcoe-solar-2024, 2024-01-01-irena-lcoe-onshore-wind-2024, 2024-01-01-irena-lcoe-offshore-wind-2024]
+      events: [2024-01-01-irena-lcoe-solar-2024-rv, 2024-01-01-irena-lcoe-onshore-wind-2024-rv, 2024-01-01-irena-lcoe-offshore-wind-2024-rv]
     window: full 2010-2024 (6 points each; the central fit); recent 2020-2024 (3 points; a sensitivity)
     fit: >-
-      Log-linear OLS of ln(LCOE) on year. Measured: offshore 0.076107/yr (2010-24), 0.029797/yr
-      (2020-24); onshore 0.091061 / 0.034300; PV 0.162935 / 0.061533. Offshore wind is the
+      Log-linear OLS of ln(LCOE) on year. Measured: offshore 0.075651/yr (2010-24), 0.035353/yr
+      (2020-24); onshore 0.093885 / 0.046803; PV 0.162868 / 0.087418 (refit 2026-10-16 on the
+      IRENA datafile values; the pilot-2025 intermediate years were wrong, e.g. offshore 2018
+      127 -> 114; the 2026-10-15 fit was 0.076107 / 0.029797). Offshore wind is the
       analogue (a large, slow-built, capital-heavy plant). Assumed: the spread (lognormal, sdlog
       0.55, as audited 2026-10-14) and the transfer to fusion; the recent-regime rate is a
       sensitivity, not part of the draw. A temporal price trend is not a measured Wright learning
       rate (no capacity data in the ledger).
     params:
-      r_offshore: {dist: lognormal, p50: 0.076107, sdlog: 0.55, label: "p50 measured, spread and transfer assumed"}
-      r_offshore_recent: {dist: fixed, value: 0.029797, label: "measured (2020-24), sensitivity"}
-      r_onshore: {dist: fixed, value: 0.091061, label: "measured (2010-24), comparator"}
-      r_pv: {dist: fixed, value: 0.162935, label: "measured (2010-24), comparator"}
+      r_offshore: {dist: lognormal, p50: 0.075651, sdlog: 0.55, label: "p50 measured, spread and transfer assumed"}
+      r_offshore_recent: {dist: fixed, value: 0.035353, label: "measured (2020-24), sensitivity"}
+      r_onshore: {dist: fixed, value: 0.093885, label: "measured (2010-24), comparator"}
+      r_pv: {dist: fixed, value: 0.162868, label: "measured (2010-24), comparator"}
   fossil-co2-deceleration:
     description: >-
       Deceleration of global fossil CO2 emissions growth: the per-year decline of the decadal
