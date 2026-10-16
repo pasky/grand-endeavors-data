@@ -27,7 +27,7 @@ drivers:
                robots-software/horizon-80-blended, robots-software/horizon-50-software-eci,
                robots-software/horizon-50-remote-rli, robots-software/eci-frontier-by-release,
                robots-software/rli-automation-by-release, robots-software/metr-80-horizon-by-release,
-               robots-software/metr-50-horizon-by-release]
+               robots-software/metr-50-horizon-by-release, robots-software/swe-marathon-h80-by-release]
     window: >-
       software: frontier points from 2024-10-15 to 2026-09-22 (16 points); remote work: all frontier
       points, 2025-06-05 to 2026-09-22 (11 points); long-run (p90): METR's own 80% series 2019-2026.
@@ -49,6 +49,13 @@ drivers:
       the two doubling times comonotonic (one latent pace); the conversion errors constant over time
       (level offsets, independent of the pace); RLI's slope equal to METR's software slope. The slope
       also moves the remote pace (0.50 / 0.69: about 2.2 / 3.0 mo), which the remote spread covers. The
+      Direct check (2026-10-16, SWE-Marathon v1.1, METR's method on 20 tasks of 4-400 h): for the 9
+      models at ECI >= 162 the measured 80% horizon minus the converted one is +0.01 doublings on average
+      (sd 0.51), so the level and its drawn error (0.553) hold at the frontier; but across ECI 154-167 the
+      measured 80% horizon barely rises with ECI (0.001 +- 0.029 doublings per ECI point against the
+      calibration's 0.223; the 50% horizon 0.074), so the pace converted from ECI may be too fast at the
+      frontier. Not used in the fit yet: the measured 80% horizons sit near the suite's shortest tasks,
+      and three frontier points (9.9 h 2026-05, 10.7 h 2026-09, 16.1 h 2026-10) do not fix a pace. The
       50% horizons are derived by the frontier ratios (software 5.756 from the two ECI calibrations;
       remote 4.96 from slope 0.6) for milestones that need a single success. Mapping task horizons onto
       a milestone is each milestone's own assumption (step 3), not part of this driver.
