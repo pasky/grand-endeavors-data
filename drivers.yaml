@@ -4,44 +4,60 @@
 # itself, so milestones sharing a driver agree on it draw by draw. Schema: core/drivers.py.
 # Changing a fit here is a reviewed data edit; ledger.py check validates the file.
 #
-# Fitted 2026-10-15 from the ledger (series/events below), carrying over the central fits and
+# Fitted 2026-10-15 from the ledger (series/events below; task-horizon fitted 2026-10-16), carrying over the central fits and
 # spreads that the 2026-10-14 ETA audit (ledger/audits/2026-10-14-r1, -r2 cross-section.md)
 # converged on; only the parts labelled measured are measured.
 seed: 20261015
 n: 10000
 as_of: 2026-10-15
 drivers:
-  metr-horizon:
+  task-horizon:
     description: >-
-      METR task horizons of the release-cohort frontier (minutes of human expert time at 50% and
-      80% success) and their doubling times.
+      AI task horizons at 50% success (human hours) of the release-cohort frontier in two domains:
+      software (METR-equivalent, converted from Epoch's ECI) and remote freelance work (converted from
+      the Remote Labor Index), their geometric mean (the robots-software KPI, horizon-50-blended), and
+      their doubling times. Replaces metr-horizon (METR stopped updating its time horizons; last
+      point 2026-04-07).
     used_by:
       - robots-software/the-linux-kernel-patch
       - robots-software/the-nature-author
       - robots-software/the-10m-solopreneur
     sources:
-      series: [robots-software/metr-50-horizon-by-release, robots-software/metr-80-horizon-by-release]
+      series: [robots-software/horizon-50-software-eci, robots-software/horizon-50-remote-rli,
+               robots-software/horizon-50-blended, robots-software/eci-frontier-by-release,
+               robots-software/rli-automation-by-release, robots-software/metr-50-horizon-by-release,
+               robots-software/metr-80-horizon-by-release]
     window: >-
-      current fit: dated points from 2024-10-15 to the last point 2026-04-07 (50%: 10 points,
-      80%: 9 points; month-only duplicates dropped); long-run fit: 2019-02-14 to 2026-04-07.
+      software: frontier points from 2024-10-15 to 2026-09-22 (16 points; from 2023-03-14: 23 points,
+      3.75 mo); remote work: all frontier points, 2025-06-05 to 2026-09-22 (11 points); long-run
+      (p90): METR's own series 2019-02-14 to 2026-04-07.
     fit: >-
-      Log-linear OLS of log2(horizon) on time in decimal years (year + (day of year - 0.5) / days
-      in the year). Measured: the anchors (last points, 2026-04-07) and
-      the fitted doubling times (50%: 3.453 mo current, 5.969 mo long-run; 80%: 4.086 mo current,
-      6.365 mo long-run). Assumed: the forecast spread around them, a split lognormal whose median
-      is the current fit and whose p90 is the long-run fit (RUBRIC §4.1 step 3: the slower long-run
-      rate is the p90 case); p10 as in the audited 2026-10-14 models. The two doubling times are
-      drawn comonotonic (one latent pace), and the 80% one is floored at the 50% one (the split
-      tails differ: in about 2% of draws the 80% horizon would otherwise grow faster and overtake
-      the 50% horizon, which is impossible by definition). Mapping task horizons onto a milestone is each
-      milestone's own assumption (step 3), not part of this driver.
+      Log-linear OLS of log2(horizon) on time in decimal years (year + (day of year - 0.5) / days in
+      the year) over the collector's series (gather/collectors/robots_software.py documents both
+      conversions: a frozen ECI-to-METR calibration, 4.415 ECI points per doubling, residual sd 0.46
+      doublings; METR's overall-score method with slope 0.6 on RLI's project lengths). Measured: the
+      anchors (the 2026-09-22 frontier, Claude Opus 5.5: ECI 166.82 and RLI 21.25%) and the current
+      doubling times (software 3.690 mo, R^2 0.98; remote work 2.544 mo, R^2 0.97; the blend's own
+      fit 2.897 mo). Assumed: the forecast spread, a split lognormal whose median is the current fit
+      and whose p90 is METR's long-run doubling time (5.969 mo, 2019-2026; RUBRIC §4.1 step 3: the
+      slower long-run rate is the p90 case) for both domains (remote work's faster pace is assumed to
+      fall back to the long-run software rate, not below it), p10 at the same ratio to the median as
+      in the audited metr-horizon fit (2.53 / 3.45); the two doubling times drawn comonotonic (one
+      latent pace). The 80% horizons keep the 80/50 ratio of METR's last measured frontier point
+      (Mythos Preview, 1044.78 / 185.91 = 5.62), assumed for both domains. The conversions carry
+      their own error (software: about +-0.5 doublings per model; remote work: the slope, about
+      +-0.5 doublings at today's rate), not drawn here. Mapping task horizons onto a milestone is
+      each milestone's own assumption (step 3), not part of this driver.
     params:
-      h50_min: {dist: fixed, value: 1044.78, label: "measured (metr-50-horizon-by-release 2026-04-07)"}
-      h80_min: {dist: fixed, value: 185.91, label: "measured (metr-80-horizon-by-release 2026-04-07)"}
-      anchor_year: {dist: fixed, value: 2026.264, label: "measured (2026-04-07 as a decimal year)"}
-      doubling_50_months: {dist: lognormal, p10: 2.53, p50: 3.45, p90: 5.97, label: "p50 and p90 measured fits, spread assumed"}
-      doubling_80_raw: {dist: lognormal, p10: 3.11, p50: 4.09, p90: 6.36, couple: doubling_50_months, label: "p50 and p90 measured fits, spread assumed"}
-      doubling_80_months: {dist: derived, expr: "max(doubling_80_raw, doubling_50_months)", label: "floored at the 50% doubling time, so the 80% horizon stays below the 50% one"}
+      h50_software_h: {dist: fixed, value: 45.648, label: "measured (horizon-50-software-eci 2026-09-22)"}
+      h50_remote_h: {dist: fixed, value: 2.005, label: "measured (horizon-50-remote-rli 2026-09-22)"}
+      anchor_year: {dist: fixed, value: 2026.725, label: "measured (2026-09-22 as a decimal year)"}
+      doubling_software_months: {dist: lognormal, p10: 2.70, p50: 3.69, p90: 5.97, label: "p50 and p90 measured fits, spread assumed"}
+      doubling_remote_months: {dist: lognormal, p10: 1.86, p50: 2.54, p90: 5.97, couple: doubling_software_months, label: "p50 measured, p90 assumed (the long-run software rate), spread assumed"}
+      h50_blended_h: {dist: derived, expr: "sqrt(h50_software_h * h50_remote_h)", label: "the KPI's geometric mean at the anchor"}
+      doubling_blended_months: {dist: derived, expr: "2 / (1 / doubling_software_months + 1 / doubling_remote_months)", label: "doubling time of the geometric mean"}
+      h80_software_h: {dist: derived, expr: "h50_software_h / 5.62", label: "80/50 ratio measured on METR's last frontier point, assumed constant"}
+      h80_remote_h: {dist: derived, expr: "h50_remote_h / 5.62", label: "the METR ratio, assumed for remote work"}
   dyna-failure-halving:
     description: >-
       Dyna Robotics' production robot: quality-failure (reject) fraction 25% (June 2025) to 7%
