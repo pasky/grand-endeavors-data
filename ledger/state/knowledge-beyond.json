@@ -1,0 +1,19 @@
+{
+ "section": "knowledge-beyond",
+ "items": {
+  "kpi": "2026-10-16"
+ },
+ "runs": [
+  {
+   "run": "20261016T060033Z",
+   "since": "1986-01-01",
+   "until": "2026-10-16",
+   "items": [
+    "kpi"
+   ],
+   "staged_events": 11,
+   "spec_commit": "31f9aca979be0086ddc0037c1d7dd40b01340dda",
+   "pi": "1.2.0"
+  }
+ ]
+}
