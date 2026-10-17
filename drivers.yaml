@@ -4,7 +4,7 @@
 # itself, so milestones sharing a driver agree on it draw by draw. Schema: core/drivers.py.
 # Changing a fit here is a reviewed data edit; ledger.py check validates the file.
 #
-# Fitted 2026-10-15 from the ledger (series/events below; task-horizon fitted 2026-10-16), carrying over the central fits and
+# Fitted 2026-10-15 from the ledger (series/events below; task-horizon fitted 2026-10-16, its software conversion error widened 2026-10-17), carrying over the central fits and
 # spreads that the 2026-10-14 ETA audit (ledger/audits/2026-10-14-r1, -r2 cross-section.md)
 # converged on; only the parts labelled measured are measured.
 seed: 20261015
@@ -27,7 +27,9 @@ drivers:
                robots-software/horizon-80-blended, robots-software/horizon-50-software-eci,
                robots-software/horizon-50-remote-rli, robots-software/eci-frontier-by-release,
                robots-software/rli-automation-by-release, robots-software/metr-80-horizon-by-release,
-               robots-software/metr-50-horizon-by-release, robots-software/swe-marathon-h80-by-release]
+               robots-software/metr-50-horizon-by-release, robots-software/swe-marathon-h80-by-release,
+               robots-software/horizon-80-gap-swe-marathon, robots-software/horizon-80-gap-metr,
+               robots-software/terminal-bench-4-pass-by-release]
     window: >-
       software: frontier points from 2024-10-15 to 2026-09-22 (16 points); remote work: all frontier
       points, 2025-06-05 to 2026-09-22 (11 points); long-run (p90): METR's own 80% series 2019-2026.
@@ -38,9 +40,14 @@ drivers:
       166.82, RLI 21.25%), converted to 7.930 h (software) and 0.404 h (remote work); the current
       doubling times of the converted series (software 3.755 mo, R^2 0.98; remote work 2.550 mo, R^2
       0.97; the blend's own fit 2.917 mo, while the median of the derived doubling_blended_months is
-      about 3.0 mo because the component windows differ); the conversion errors: software, the OLS
-      prediction standard error of a new model's log2 METR 80% horizon at ECI 166.82 (0.553 doublings:
-      the 0.49 residual sd plus the extrapolation beyond the top calibration pair at 156.76); remote
+      about 3.0 mo because the component windows differ); the conversion errors: software, 0.70 doublings
+      = sqrt(0.553^2 + 0.43^2): the OLS prediction standard error of a new model's log2 METR 80% horizon
+      at ECI 166.82 (0.553: the 0.49 residual sd plus the extrapolation beyond the top calibration pair
+      at 156.76) widened for the calibration slope's form beyond METR's data (assumed: one sd of 0.043
+      doublings per ECI point over the 10.06 points from 156.76 to 166.82, i.e. a frontier slope of about
+      0.18-0.27 against the fitted 0.223; measured slopes on other suites scatter around it, 2026-10-17:
+      SWE-bench Verified 0.12, Terminal-Bench 2.0 by the overall-score method 0.21 at ECI >= 155, RLI
+      0.29, Epoch's launch rule of thumb 0.20); remote
       work, METR's logistic slope measured on its 26 models (ln 4 / log2(h50 / h80): p10 0.50, median
       0.59, p90 0.69) moves today's 80% level by -0.84 / +0.55 doublings against the 0.6 used. Assumed:
       the pace spread, a split lognormal whose median is the current fit and whose p90 is METR's
@@ -48,22 +55,38 @@ drivers:
       the p90 case) for both domains, p10 at the ratio of the audited metr-horizon fit (2.53 / 3.45);
       the two doubling times comonotonic (one latent pace); the conversion errors constant over time
       (level offsets, independent of the pace); RLI's slope equal to METR's software slope. The slope
-      also moves the remote pace (0.50 / 0.69: about 2.2 / 3.0 mo), which the remote spread covers. The
-      Direct check (2026-10-16, SWE-Marathon v1.1, METR's method on 20 tasks of 4-400 h): for the 9
-      models at ECI >= 162 the measured 80% horizon minus the converted one is +0.01 doublings on average
-      (sd 0.51), so the level and its drawn error (0.553) hold at the frontier; but across ECI 154-167 the
-      measured 80% horizon barely rises with ECI (0.001 +- 0.029 doublings per ECI point against the
-      calibration's 0.223; the 50% horizon 0.074), so the pace converted from ECI may be too fast at the
-      frontier. Not used in the fit yet: the measured 80% horizons sit near the suite's shortest tasks,
-      and three frontier points (9.9 h 2026-05, 10.7 h 2026-09, 16.1 h 2026-10) do not fix a pace. The
+      also moves the remote pace (0.50 / 0.69: about 2.2 / 3.0 mo), which the remote spread covers. Cross-checks
+      (owner decision 2026-10-17, option D: keep the METR-only calibration, add a cross-check panel and
+      a tripwire, widen the software error; research: gather/collectors/robots_software.py CROSS-CHECKS).
+      SWE-Marathon v1.1 (METR's method on 20 tasks of 4-400 h): at the frontier its measured 80% horizon
+      matches the converted one (9 models at ECI >= 162: +0.01 doublings, sd 0.51), but it barely rises
+      with ECI (0.001 +- 0.029 doublings per point) because the suite cannot resolve the frontier at 80%:
+      6 of its 20 tasks are almost always solved by frontier models and 7 almost never, so h80 sits near
+      10 h for every frontier model (its frontier pass rate 49% 2026-05, 53% 2026-10); not used as a
+      pace. Independent evidence over the same months: Terminal-Bench 4.0 (not in ECI; its hour labels
+      do not predict failures, so a rate only) 24% -> 65% frontier resolution 2026-05 -> 2026-09; UK AISI
+      cyber 80% horizon doubling 4.7 mo (its 2026-02 estimate; Mythos Preview and GPT-5.5 above that
+      trend; aisi.gov.uk 2026-10-17); METR's own trend 128.7 d (50%, 2023-, its YAML); METR's last 80%
+      point (3.1 h, 2026-04-07) at 4.2 mo per doubling projects 7.7 h by 2026-09-22 against the 7.930 h
+      converted; ECI is fitted with METR among its inputs, but an ECI refit without METR moves the
+      calibration slope only 0.2226 -> 0.2207. Lab effects at 80% are recorded, not applied (Anthropic
+      +0.19 +- 0.18, OpenAI -0.16 +- 0.14 doublings off the line). The tripwire re-opens this fit when
+      two measured gap series sit more than one doubling off the conversion on the same side for two
+      consecutive months (only SWE-Marathon reports at the frontier now; METR's gap series ends
+      2026-03 and resumes if METR does). The
       50% horizons are derived by the frontier ratios (software 5.756 from the two ECI calibrations;
       remote 4.96 from slope 0.6) for milestones that need a single success. Mapping task horizons onto
       a milestone is each milestone's own assumption (step 3), not part of this driver.
+    tripwire:
+      series: [robots-software/horizon-80-gap-swe-marathon, robots-software/horizon-80-gap-metr]
+      threshold: 1.0
+      min_series: 2
+      consecutive: 2
     params:
       h80_software_h: {dist: fixed, value: 7.930, label: "converted from measured ECI (horizon-80-software-eci 2026-09-22)"}
       h80_remote_h: {dist: fixed, value: 0.404, label: "converted from the measured RLI rate (horizon-80-remote-rli 2026-09-22)"}
       anchor_year: {dist: fixed, value: 2026.725, label: "measured (2026-09-22 as a decimal year)"}
-      software_conversion_doublings: {dist: normal, p50: 0, sd: 0.553, label: "measured (calibration prediction error at the frontier ECI)"}
+      software_conversion_doublings: {dist: normal, p50: 0, sd: 0.70, label: "measured calibration prediction error at the frontier ECI (0.553) plus an assumed slope-form allowance"}
       remote_conversion_doublings: {dist: normal, p10: -0.84, p50: 0, p90: 0.55, label: "measured (METR slope spread), transfer to RLI assumed"}
       doubling_software_months: {dist: lognormal, p10: 2.75, p50: 3.755, p90: 6.365, label: "p50 and p90 measured fits, spread assumed"}
       doubling_remote_months: {dist: lognormal, p10: 1.87, p50: 2.55, p90: 6.365, couple: doubling_software_months, label: "p50 measured, p90 assumed (the long-run software rate), spread assumed"}
