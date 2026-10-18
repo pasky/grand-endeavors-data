@@ -1,7 +1,8 @@
 {
  "section": "knowledge-beyond",
  "items": {
-  "kpi": "2026-10-16"
+  "kpi": "2026-10-16",
+  "beyond": "2026-10-18"
  },
  "runs": [
   {
@@ -13,6 +14,17 @@
    ],
    "staged_events": 11,
    "spec_commit": "31f9aca979be0086ddc0037c1d7dd40b01340dda",
+   "pi": "1.2.0"
+  },
+  {
+   "run": "20261018T171055Z",
+   "since": "2026-01-01",
+   "until": "2026-10-18",
+   "items": [
+    "beyond"
+   ],
+   "staged_events": 51,
+   "spec_commit": "d53e7af948f8c9994609dfd1d1541cb8b57e8a3f",
    "pi": "1.2.0"
   }
  ]
