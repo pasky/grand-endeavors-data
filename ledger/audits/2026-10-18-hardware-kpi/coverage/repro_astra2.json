@@ -1,0 +1,571 @@
+{
+  "roster": [
+    {
+      "vendor": "UBTECH",
+      "platform": "Walker S1; Walker S2",
+      "customer": "Geely Holding",
+      "first_published": "2025-03-03",
+      "first_event_id": "2025-03-03-ubtech-zeekr-multi-humanoid-collab-training",
+      "supporting_event_ids": [
+        "2025-03-03-ubtech-zeekr-multi-humanoid-collab-training",
+        "2025-07-17-ubtech-walker-s2-autonomous-battery-swap"
+      ],
+      "ended": null,
+      "robots_disclosed": "Dozens of Walker S1 robots; one Walker S2 described subsequently",
+      "autonomy_evidence": "claimed",
+      "redeployed": false,
+      "note": "Zeekr is consolidated to its parent Geely Holding. The March source was opened: it reports actual sorting, heavy-workpiece handling and precision assembly across production areas at the named Zeekr factory, rather than merely a training-centre deployment or future plan. Counted as an in-factory pilot under R2 despite its practical-training label; no production volumes or intervention rates disclosed. Walker S2 parts handling is corroborative. Event 178 combines a July 2025 capability announcement with a March 2026 factory report; its July date is not used to backdate the later corroboration. No different-job deployment elsewhere established in the ledger claims."
+    },
+    {
+      "vendor": "Figure AI",
+      "platform": "Figure 02",
+      "customer": "BMW",
+      "first_published": "2025-04-06",
+      "first_event_id": "2025-04-06-fortune-bmw-single-figure-robot",
+      "supporting_event_ids": [
+        "2025-04-06-fortune-bmw-single-figure-robot",
+        "2025-11-19-figure-02-bmw-production-run-r2",
+        "2026-10-07-forbes-bmw-figure-scope"
+      ],
+      "ended": "2026-10-07-forbes-bmw-figure-scope — No Figure robots currently operating at BMW; the June 2026 return was a non-production test that also ended. The earlier Figure 02 production pilot was retired in event 2025-11-19-figure-02-bmw-production-run-r2. Retained cumulatively under R5.",
+      "robots_disclosed": 2,
+      "autonomy_evidence": "claimed",
+      "redeployed": true,
+      "note": "Earliest explicit live-production evidence is the April 2025 Fortune report: one robot picking parts from a logistics container and loading a body-shop welding fixture, after non-production-only testing until March. Reject the November 2024 fleet claim as a production start. Later sources disclose two robots, only one working at a time. 90,000+ parts, 1,250+ runtime hours and 30,000+ vehicles; zero-intervention figures were targets, not achieved measurements. Figure 02 also does a different job, parcel barcode orientation, at the vendor evaluation site in event 177; redeployed means different job elsewhere, not necessarily another qualifying customer."
+    },
+    {
+      "vendor": "Agility Robotics",
+      "platform": "Digit",
+      "customer": "GXO Logistics",
+      "first_published": "2025-11-20",
+      "first_event_id": "2025-11-20-digit-100k-totes-gxo-r2",
+      "supporting_event_ids": [
+        "2025-11-20-digit-100k-totes-gxo-r2",
+        "2025-01-01-digit-gxo-raas-deployment-rv",
+        "2026-09-15-agility-digit-65000-hours"
+      ],
+      "ended": null,
+      "robots_disclosed": null,
+      "autonomy_evidence": "claimed",
+      "redeployed": true,
+      "note": "Commercial tote handling between AMRs, conveyor and floor locations at Flowery Branch. More than 100,000 totes; exact fleet size undisclosed, so the 2–5 estimate is not treated as a disclosed count. Use the event published date, not the older deployment date or the original linked announcement date. A distinct job elsewhere is bearing-basket handling at Schaeffler. Task accuracy of approximately 98% is not an intervention rate."
+    },
+    {
+      "vendor": "Spirit AI",
+      "platform": "Xiaomo",
+      "customer": "CATL",
+      "first_published": "2025-12-18",
+      "first_event_id": "2025-12-17-catl-xiaomo-battery-line",
+      "supporting_event_ids": [
+        "2025-12-17-catl-xiaomo-battery-line"
+      ],
+      "ended": null,
+      "robots_disclosed": null,
+      "autonomy_evidence": "claimed",
+      "redeployed": false,
+      "note": "High-voltage battery-connector insertion on the Zhongzhou production line. Opened SCMP/Yahoo source explicitly identifies Spirit AI as the robot builder, not just a model supplier. Claimed 99% task success and triple human daily workload; no achieved intervention rate, fleet size or different-job deployment disclosed."
+    },
+    {
+      "vendor": "Agility Robotics",
+      "platform": "Digit",
+      "customer": "Schaeffler",
+      "first_published": "2026-03-25",
+      "first_event_id": "2026-03-25-schaeffler-digit-cheraw-8h",
+      "supporting_event_ids": [
+        "2026-03-25-schaeffler-digit-cheraw-8h",
+        "2026-09-15-agility-digit-65000-hours"
+      ],
+      "ended": null,
+      "robots_disclosed": 1,
+      "autonomy_evidence": "claimed",
+      "redeployed": true,
+      "note": "One Digit moves 25-pound bearing-component baskets from stamping press to washing machine, eight hours daily in two four-hour shifts. The opened report describes automated work but no measured interventions or independent examination of the control system. Different job elsewhere: tote handling at GXO."
+    },
+    {
+      "vendor": "AgiBot",
+      "platform": "G2",
+      "customer": "Longcheer",
+      "first_published": "2026-04-15",
+      "first_event_id": "2026-04-14-agibot-g2-longcheer-8h-shift",
+      "supporting_event_ids": [
+        "2026-04-14-agibot-g2-longcheer-8h-shift",
+        "2026-04-14-agibot-humanoid-mtbf-vs-industrial",
+        "2026-06-28-agibot-longcheer-whole-section-8-robots",
+        "2026-06-29-agibot-six-day-factory-livestream"
+      ],
+      "ended": null,
+      "robots_disclosed": 8,
+      "autonomy_evidence": "claimed",
+      "redeployed": false,
+      "note": "Tablet loading/unloading at MMIT test stations on a live mass-production line. Four robots in April, eight in June. April eight-hour shift, 18–20 seconds per operation and up to 310 units/hour; June six-day deployment reported 64+ operating hours, 64,828 tasks and 17,625 units. Success percentages and minimal-human-intervention wording do not disclose an intervention rate. Humans and maintenance team remain present; no teleoperation of the counted work is stated. Multiple workflows here are not a different job elsewhere."
+    },
+    {
+      "vendor": "Robotera",
+      "platform": "Column-based humanoid (model not specified)",
+      "customer": "China Post",
+      "first_published": "2026-06-02",
+      "first_event_id": "2026-05-31-robotera-china-post-sorting-1200-per-hour",
+      "supporting_event_ids": [
+        "2026-05-31-robotera-china-post-sorting-1200-per-hour"
+      ],
+      "ended": null,
+      "robots_disclosed": 6,
+      "autonomy_evidence": "evidenced",
+      "redeployed": false,
+      "note": "Parcel picking and label-up reorientation at the Longgang logistics centre. R1 explicitly admits column-based humanoids; not reclassified as a conventional fixed-arm cell. Opened Economic Observer source describes six robots during a 1 a.m. shift and reports human troubleshooting of disconnects/stoppages and supervision, providing independent reporting on interventions, though no numerical rate. Stable 1,200 parcels/hour by end-May. Six is the disclosed local fleet, not a China Post-wide total. Use the event publication date of June 2, not the retrospective November arrival or May 20 secondary source. The other named logistics operator in the full source is not added from a bare customer-list mention."
+    },
+    {
+      "vendor": "Galbot",
+      "platform": "S1",
+      "customer": "CATL",
+      "first_published": "2026-06-24",
+      "first_event_id": "2026-06-24-galbot-s1-catl-24-7-three-months",
+      "supporting_event_ids": [
+        "2026-06-24-galbot-s1-catl-24-7-three-months"
+      ],
+      "ended": null,
+      "robots_disclosed": null,
+      "autonomy_evidence": "claimed",
+      "redeployed": false,
+      "note": "Autonomous heavy-material-bin transport between module and battery-pack stations at Ningde; source explicitly says without remote control. Claimed 7×24 operation for three months after March acceptance, but first qualifying event published June 24. Separate vendor from Spirit AI, same parent customer CATL. No fleet size or intervention rate disclosed."
+    }
+  ],
+  "rejected_borderline": [
+    {
+      "event_id": "2025-01-01-apollo-runtime-cost-specs",
+      "candidate": "Apptronik/unnamed",
+      "rule_failed": "R2",
+      "why": "Apollo runtime and price specifications, not reported work for a named external customer."
+    },
+    {
+      "event_id": "2025-01-01-figure-02-runtime-cost-specs",
+      "candidate": "Figure AI/unnamed",
+      "rule_failed": "R2",
+      "why": "Figure 02 specifications and estimated price only."
+    },
+    {
+      "event_id": "2025-01-01-fukushima-debris-total-0-9g",
+      "candidate": "Unspecified robot maker/TEPCO",
+      "rule_failed": "R3",
+      "why": "Fuel-debris retrieval explicitly teleoperated; also no qualifying GP platform established."
+    },
+    {
+      "event_id": "2025-01-01-optimus-gen3-targets",
+      "candidate": "Tesla/Tesla",
+      "rule_failed": "R2",
+      "why": "Optimus Gen 3 targets, not external-customer production work."
+    },
+    {
+      "event_id": "2025-01-01-wsj-optimus-remote-controlled",
+      "candidate": "Tesla/unnamed",
+      "rule_failed": "R3",
+      "why": "Optimus demonstrations explicitly described as remotely controlled."
+    },
+    {
+      "event_id": "2024-11-01-fukushima-first-debris-sample-rv",
+      "candidate": "Unspecified robot maker/TEPCO",
+      "rule_failed": "R1",
+      "why": "Fuel-debris sample retrieval does not establish a humanoid or mobile manipulator; related retrieval is purpose-built and teleoperated."
+    },
+    {
+      "event_id": "2025-01-01-agility-home-safety-stance-rv",
+      "candidate": "Agility Robotics/unnamed",
+      "rule_failed": "R2",
+      "why": "A home-safety policy, not a named customer deployment."
+    },
+    {
+      "event_id": "2025-01-01-agility-mercado-libre-agreement-rv",
+      "candidate": "Agility Robotics/Mercado Libre",
+      "rule_failed": "R2",
+      "why": "Commercial agreement to deploy Digit; no work already being performed reported."
+    },
+    {
+      "event_id": "2025-01-01-apptronik-apollo-mercedes-testing-rv",
+      "candidate": "Apptronik/Mercedes-Benz",
+      "rule_failed": "R2",
+      "why": "Testing Apollo for generic intralogistics tasks at Berlin does not establish a specified job in live operations rather than non-production training/testing. Listed source returned 404 when opened; no stronger qualifying evidence available in the claims."
+    },
+    {
+      "event_id": "2025-01-01-digit-runtime-cost-specs-rv",
+      "candidate": "Agility Robotics/unnamed",
+      "rule_failed": "R2",
+      "why": "Battery and autonomous-charging capabilities, not a named external-customer job."
+    },
+    {
+      "event_id": "2025-01-01-kepler-k2-8-hour-livestream-rv",
+      "candidate": "Kepler/unnamed",
+      "rule_failed": "R2",
+      "why": "K2 trade-show livestream explicitly outside production work."
+    },
+    {
+      "event_id": "2025-01-01-pudu-d5-irex-2025-rv",
+      "candidate": "Pudu Robotics/iREX",
+      "rule_failed": "R1",
+      "why": "D5 quadruped launch does not establish physical manipulation or a GP manipulation job; also a trade show, not production."
+    },
+    {
+      "event_id": "2025-01-01-sanctuary-gen7-phoenix-hands-rv",
+      "candidate": "Sanctuary AI/unnamed",
+      "rule_failed": "R2",
+      "why": "Phoenix hand specifications, not work for a named external customer."
+    },
+    {
+      "event_id": "2025-01-01-spot-nuclear-site-inspections-rv",
+      "candidate": "Boston Dynamics/TEPCO; Sellafield; Chernobyl operator",
+      "rule_failed": "R1",
+      "why": "Spot deployments are inspection/sensing only; no manipulation or repair reported."
+    },
+    {
+      "event_id": "2025-01-01-tesla-optimus-5000-target-abandoned-rv",
+      "candidate": "Tesla/Tesla",
+      "rule_failed": "R2",
+      "why": "Optimus remains in internal factory pilot testing; own facilities excluded."
+    },
+    {
+      "event_id": "2025-01-01-ubtech-walker-s2-500-units-contracted-rv",
+      "candidate": "UBTECH/BYD",
+      "rule_failed": "R2",
+      "why": "Walker S2 contracted units, not reported production work."
+    },
+    {
+      "event_id": "2025-01-01-ubtech-walker-s2-500-units-contracted-rv",
+      "candidate": "UBTECH/Volkswagen Group",
+      "rule_failed": "R2",
+      "why": "Volkswagen and Audi consolidated to parent; contracts alone do not report work."
+    },
+    {
+      "event_id": "2025-01-01-unitree-g1-13500-rv",
+      "candidate": "Unitree/unnamed",
+      "rule_failed": "R2",
+      "why": "G1 sale price only, with no customer work."
+    },
+    {
+      "event_id": "2025-04-01-hugging-face-acquires-pollen-rv",
+      "candidate": "Pollen Robotics/Hugging Face",
+      "rule_failed": "R2",
+      "why": "Acquisition and Reachy 2 product sale, not external-customer production work."
+    },
+    {
+      "event_id": "2025-07-03-hyundai-georgia-atlas-from-october-rv",
+      "candidate": "Boston Dynamics/Hyundai Motor Group",
+      "rule_failed": "R2",
+      "why": "Atlas deployment is a plan; Hyundai is also the robot maker’s parent group."
+    },
+    {
+      "event_id": "2025-09-01-figure-03-tactile-hands-rv",
+      "candidate": "Figure AI/unnamed",
+      "rule_failed": "R2",
+      "why": "Figure 03 introduction and sensor specifications only."
+    },
+    {
+      "event_id": "2025-10-01-1x-neo-preorders-rv",
+      "candidate": "1X Technologies/unnamed",
+      "rule_failed": "R2",
+      "why": "NEO pre-orders and pricing, no named paying owner with reported work."
+    },
+    {
+      "event_id": "2025-10-01-figure-03-helix-novel-objects-rv",
+      "candidate": "Figure AI/Figure AI",
+      "rule_failed": "R2",
+      "why": "Figure 03 novel-object manipulation demonstration, no live external-customer operations."
+    },
+    {
+      "event_id": "2025-12-04-fda-clears-medtronic-hugo-rv",
+      "candidate": "Medtronic/unnamed",
+      "rule_failed": "R1",
+      "why": "Hugo is a purpose-built surgical system, not the eligible GP mobile-manipulation class; clearance is not customer work either."
+    },
+    {
+      "event_id": "2025-12-17-fda-clears-cmr-versius-plus-rv",
+      "candidate": "CMR Surgical/unnamed",
+      "rule_failed": "R1",
+      "why": "Versius Plus is a purpose-built surgical system, not the eligible GP class; regulatory clearance alone also fails R2."
+    },
+    {
+      "event_id": "2024-01-01-stanford-mobile-aloha-cooking-rv",
+      "candidate": "Stanford/Stanford",
+      "rule_failed": "R2",
+      "why": "Mobile ALOHA cooking in research demonstrations, not external-customer operations."
+    },
+    {
+      "event_id": "2025-01-01-anymal-northern-lights-ccs-rv",
+      "candidate": "ANYbotics/Equinor",
+      "rule_failed": "R1",
+      "why": "ANYmal CO2 monitoring is sensing-only inspection."
+    },
+    {
+      "event_id": "2025-01-01-optimus-serves-popcorn-tesla-diner-rv",
+      "candidate": "Tesla/Tesla",
+      "rule_failed": "R2",
+      "why": "Popcorn service occurs at the vendor’s own Tesla Diner, not an external customer."
+    },
+    {
+      "event_id": "2025-01-01-ubtech-walker-s2-marching-demo-rv",
+      "candidate": "UBTECH/UBTECH",
+      "rule_failed": "R2",
+      "why": "Walker S2 marching demonstration, not production work."
+    },
+    {
+      "event_id": "2025-01-01-xpeng-iron-reveal-rv",
+      "candidate": "XPeng/XPeng",
+      "rule_failed": "R2",
+      "why": "IRON product-reveal demonstration, no external-customer production work."
+    },
+    {
+      "event_id": "2025-08-01-atlas-tri-large-behavior-models-rv",
+      "candidate": "Boston Dynamics/Toyota",
+      "rule_failed": "R2",
+      "why": "Toyota Research Institute Atlas behavior-model demonstration, not live Toyota production."
+    },
+    {
+      "event_id": "2024-01-07-figure-01-keurig-coffee",
+      "candidate": "Figure AI/Keurig",
+      "rule_failed": "R2",
+      "why": "Keurig is the appliance brand in a Figure 01 demonstration, not a reported robot customer; no live operations."
+    },
+    {
+      "event_id": "2024-02-28-agility-digit-putwall-97pct",
+      "candidate": "Agility Robotics/unnamed",
+      "rule_failed": "R2",
+      "why": "Autonomous putwall work is claimed but the customer/site is undisclosed; 97% success does not identify a customer."
+    },
+    {
+      "event_id": "2024-10-31-pi0-generalist-policy",
+      "candidate": "Unspecified robot makers/Physical Intelligence",
+      "rule_failed": "R2",
+      "why": "Generalist-policy laundry/table-bussing evaluations, not named external-customer production work; model provider cannot substitute for maker."
+    },
+    {
+      "event_id": "2024-11-19-figure-02-bmw-4x-7x",
+      "candidate": "Figure AI/BMW",
+      "rule_failed": "R2",
+      "why": "2024 fleet/video claim does not establish live production. BMW said no robots were then onsite; later event 174 says work remained non-production-only until March 2025."
+    },
+    {
+      "event_id": "2025-03-19-edinburgh-ellmer-coffee",
+      "candidate": "Kinova/University of Edinburgh",
+      "rule_failed": "R1",
+      "why": "ELLMER uses a seven-DoF arm in a purpose-designed research kitchen, not a self-moving manipulation robot; also research rather than production."
+    },
+    {
+      "event_id": "2025-04-22-pi05-unseen-homes-r2",
+      "candidate": "Unspecified robot makers/Physical Intelligence",
+      "rule_failed": "R2",
+      "why": "Mobile-manipulator evaluations in unseen homes; no named paying owner or customer operations."
+    },
+    {
+      "event_id": "2025-04-29-dyna-1-24h-99pct",
+      "candidate": "Unspecified arm maker/Dyna Robotics",
+      "rule_failed": "R1",
+      "why": "DYNA-1 runs stationary arms, explicitly excluded regardless of model generality or 24-hour autonomy claim."
+    },
+    {
+      "event_id": "2025-06-07-figure-helix-logistics-scaling",
+      "candidate": "Figure AI/Figure AI",
+      "rule_failed": "R2",
+      "why": "Parcel-orientation run is explicitly a company evaluation, not a customer shift."
+    },
+    {
+      "event_id": "2025-10-12-wrs2025-f-rei-plant-disaster-challenge",
+      "candidate": "Unspecified robot makers/World Robot Summit",
+      "rule_failed": "R2",
+      "why": "Manipulation tasks take place on staged disaster courses at a robot test field, not live operations."
+    },
+    {
+      "event_id": "2025-11-18-pistar06-espresso-13h",
+      "candidate": "Unspecified robot makers/Physical Intelligence",
+      "rule_failed": "R2",
+      "why": "Espresso/laundry model demonstrations, no named external customer receiving production work."
+    },
+    {
+      "event_id": "2025-11-19-sunday-act1-unseen-airbnbs",
+      "candidate": "Sunday Robotics/Airbnb",
+      "rule_failed": "R2",
+      "why": "Unseen Airbnb homes are evaluation settings, not evidence Airbnb or a named paying homeowner is the production customer."
+    },
+    {
+      "event_id": "2025-12-01-behavior-challenge-2025-results",
+      "candidate": "Unspecified robot makers/Stanford",
+      "rule_failed": "R2",
+      "why": "BEHAVIOR household-task benchmark is entirely simulated, not physical production work for an external customer."
+    },
+    {
+      "event_id": "2026-01-05-atlas-product-self-battery-swap",
+      "candidate": "Boston Dynamics/Hyundai Motor Group",
+      "rule_failed": "R2",
+      "why": "CES capability launch and future RMAC commitment, not production; RMAC is a parent-group training centre."
+    },
+    {
+      "event_id": "2026-01-05-atlas-product-self-battery-swap",
+      "candidate": "Boston Dynamics/Google",
+      "rule_failed": "R2",
+      "why": "Google DeepMind commitment is a planned deployment, not reported production work."
+    },
+    {
+      "event_id": "2026-01-26-ubtech-walker-s2-30-50pct-human",
+      "candidate": "UBTECH/unnamed",
+      "rule_failed": "R2",
+      "why": "Walker S2 productivity/task capability report names no customer doing a specified job."
+    },
+    {
+      "event_id": "2026-01-27-figure-helix-02-dishwasher-4min",
+      "candidate": "Figure AI/Figure AI",
+      "rule_failed": "R2",
+      "why": "Dishwasher run in a trained evaluation environment, not named external-customer production work."
+    },
+    {
+      "event_id": "2026-01-28-musk-optimus-no-useful-work",
+      "candidate": "Tesla/Tesla",
+      "rule_failed": "R2",
+      "why": "Optimus R&D and basic tasks in the maker’s own factory are excluded, irrespective of claimed autonomy."
+    },
+    {
+      "event_id": "2026-02-22-figure-03-hq-24-7-no-babysitter",
+      "candidate": "Figure AI/Figure AI",
+      "rule_failed": "R2",
+      "why": "Figure 03 fleet at its own headquarters; tasks also unspecified."
+    },
+    {
+      "event_id": "2026-03-02-xiaomi-humanoid-3h-nut-station-90pct",
+      "candidate": "Xiaomi/Xiaomi",
+      "rule_failed": "R2",
+      "why": "Nut loading is on Xiaomi’s own automotive production line, not an external customer."
+    },
+    {
+      "event_id": "2026-03-24-agibot-mtbf-hundred-hours",
+      "candidate": "AgiBot/unnamed",
+      "rule_failed": "R2",
+      "why": "Industrial continuous-operation claim omits customer/site names and the concrete job."
+    },
+    {
+      "event_id": "2026-04-02-generalist-gen1-99pct",
+      "candidate": "Unspecified robot makers/Generalist AI",
+      "rule_failed": "R2",
+      "why": "GEN-1 dexterity/folding evaluations, not a named external customer’s real operations."
+    },
+    {
+      "event_id": "2026-04-16-pi07-unseen-kitchens",
+      "candidate": "Unspecified robot makers/Physical Intelligence",
+      "rule_failed": "R2",
+      "why": "Kitchen/bedroom model evaluations do not identify a paying owner or external production customer."
+    },
+    {
+      "event_id": "2026-04-18-beijing-robot-warrior-challenge-tien-kung-autonomous",
+      "candidate": "X-Humanoid/Beijing E-Town",
+      "rule_failed": "R2",
+      "why": "Tien Kung autonomous run is a staged Robot Warrior Challenge course, not live disaster-response work."
+    },
+    {
+      "event_id": "2026-04-30-1x-neo-factory-shipping",
+      "candidate": "1X Technologies/unnamed",
+      "rule_failed": "R2",
+      "why": "NEO manufacturing and future customer shipments; no named owner with reported robot work."
+    },
+    {
+      "event_id": "2026-05-18-figure-03-vs-human-10h-sort",
+      "candidate": "Figure AI/Figure AI",
+      "rule_failed": "R2",
+      "why": "Parcel-sorting contest at the vendor’s own facility, explicitly not a customer site."
+    },
+    {
+      "event_id": "2026-05-22-figure-03-200h-autonomous-livestream",
+      "candidate": "Figure AI/Figure AI",
+      "rule_failed": "R2",
+      "why": "200-hour sorting livestream at vendor headquarters, not an external customer workplace."
+    },
+    {
+      "event_id": "2026-06-15-anymal-vigier-33000-autonomous-inspections",
+      "candidate": "ANYbotics/Vigier Ciment",
+      "rule_failed": "R1",
+      "why": "ANYmal nightly inspections are explicitly sensing-only, without manipulation or repair."
+    },
+    {
+      "event_id": "2026-07-16-sunday-act2-laundry-99pct",
+      "candidate": "Sunday Robotics/unnamed",
+      "rule_failed": "R2",
+      "why": "Laundry benchmark in unseen homes; no named paying owner or production customer."
+    },
+    {
+      "event_id": "2026-07-30-gemini-robotics-2-humanoid-scores",
+      "candidate": "Apptronik/Google",
+      "rule_failed": "R2",
+      "why": "Apollo controlled by Gemini Robotics 2 in DeepMind’s own evaluations, not production work."
+    },
+    {
+      "event_id": "2026-08-27-dyna-din-tai-fung-shift-throughput",
+      "candidate": "Dyna Robotics/Din Tai Fung",
+      "rule_failed": "R1",
+      "why": "Dyna model deployment uses stationary folding arms rather than a humanoid/mobile manipulator. Dyna is the model provider, not an established eligible robot maker in this claim."
+    },
+    {
+      "event_id": "2026-09-15-agility-digit-65000-hours",
+      "candidate": "Agility Robotics/Amazon",
+      "rule_failed": "R2",
+      "why": "Only named in an aggregate operating-hours/customer list; source claim does not specify the job or establish live Amazon operations."
+    },
+    {
+      "event_id": "2026-09-15-agility-digit-65000-hours",
+      "candidate": "Agility Robotics/Toyota",
+      "rule_failed": "R2",
+      "why": "Toyota Motor Manufacturing Canada consolidated to Toyota; bare site/customer listing with no job does not qualify."
+    },
+    {
+      "event_id": "2026-09-17-figure-helix-25-30-homes",
+      "candidate": "Figure AI/unnamed",
+      "rule_failed": "R2",
+      "why": "Helix 2.5 evaluation in unseen Bay Area homes; no named paying homeowner or production customer."
+    },
+    {
+      "event_id": "2026-09-21-atlas-rmac-training-hmgma",
+      "candidate": "Boston Dynamics/Hyundai Motor Group",
+      "rule_failed": "R2",
+      "why": "RMAC is explicitly a training/testbed centre in the maker’s parent group; assembly and large deployments remain future plans."
+    },
+    {
+      "event_id": "2026-09-27-homebody-gpt6-astra-unseen-kitchen",
+      "candidate": "Unitree/Stanford; Caltech",
+      "rule_failed": "R2",
+      "why": "HomeBody on G1 is a research exploration/tidying demonstration, not live operations for a paying customer."
+    },
+    {
+      "event_id": "2026-10-01-anybotics-shift-200-deployments",
+      "candidate": "ANYbotics/unnamed",
+      "rule_failed": "R1",
+      "why": "Shift deployment totals cover sensing and navigation only, explicitly no manipulation or repair."
+    },
+    {
+      "event_id": "2026-10-02-tepco-robot-arm-inserted-unit2",
+      "candidate": "Unspecified robot maker/TEPCO",
+      "rule_failed": "R3",
+      "why": "Containment-vessel arm is explicitly remote-controlled; also a purpose-built arm rather than qualifying GP embodiment."
+    },
+    {
+      "event_id": "2026-10-07-forbes-bmw-figure-scope",
+      "candidate": "Figure AI/BMW",
+      "rule_failed": "R2",
+      "why": "The new June 2026 project was a non-production test and has ended; does not qualify as another production start. Also supplies ending/scope evidence for the retained earlier pair."
+    },
+    {
+      "event_id": "2025-01-01-optimus-falls-miami-demo-rv",
+      "candidate": "Tesla/unnamed",
+      "rule_failed": "R2",
+      "why": "Viral Optimus fall is a demonstration, not reported work for a named external customer."
+    },
+    {
+      "event_id": "2025-01-01-unitree-r1-5900-rv",
+      "candidate": "Unitree/unnamed",
+      "rule_failed": "R2",
+      "why": "R1 product price and battery specifications only, no customer work."
+    }
+  ],
+  "cumulative_by_quarter": {
+    "2024Q4": 0,
+    "2025Q1": 1,
+    "2025Q2": 2,
+    "2025Q3": 2,
+    "2025Q4": 4,
+    "2026Q1": 5,
+    "2026Q2": 8,
+    "2026Q3": 8
+  }
+}
