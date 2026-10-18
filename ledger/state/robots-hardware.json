@@ -4,7 +4,8 @@
   "milestone:the-wozniak-test": "2026-10-12",
   "milestone:the-fukushima-test": "2026-10-12",
   "milestone:the-blue-collar-shift": "2026-10-12",
-  "milestone:the-dark-line": "2026-10-12"
+  "milestone:the-dark-line": "2026-10-12",
+  "kpi": "2026-10-18"
  },
  "runs": [
   {
@@ -20,6 +21,17 @@
    "staged_events": 55,
    "spec_commit": "bced2ba851db64936c9493d3bf811ea0ee350728",
    "pi": "1.1.0"
+  },
+  {
+   "run": "20261018T092635Z",
+   "since": "2023-01-01",
+   "until": "2026-10-18",
+   "items": [
+    "kpi"
+   ],
+   "staged_events": 14,
+   "spec_commit": "5ca52b5c5755cb42694419c82ed2667989df61d6",
+   "pi": "1.2.0"
   }
  ]
 }
