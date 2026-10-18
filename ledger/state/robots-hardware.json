@@ -5,7 +5,8 @@
   "milestone:the-fukushima-test": "2026-10-12",
   "milestone:the-blue-collar-shift": "2026-10-12",
   "milestone:the-dark-line": "2026-10-12",
-  "kpi": "2026-10-18"
+  "kpi": "2026-10-18",
+  "beyond": "2026-10-18"
  },
  "runs": [
   {
@@ -42,6 +43,17 @@
    ],
    "staged_events": 1,
    "spec_commit": "b42f529396cd4c5d88feaa681dcdf0283261f94b",
+   "pi": "1.2.0"
+  },
+  {
+   "run": "20261018T111111Z",
+   "since": "2012-01-01",
+   "until": "2026-10-18",
+   "items": [
+    "beyond"
+   ],
+   "staged_events": 10,
+   "spec_commit": "aa9684d0d978dea9140ac3dd8ef8b2ac4a2199b2",
    "pi": "1.2.0"
   }
  ]
