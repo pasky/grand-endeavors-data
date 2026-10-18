@@ -1,0 +1,25 @@
+entry_id,admitted(y/n),gate_reason,task_id,instance_id,note
+C001,y,"humanoid; named customer (Longcheer) live line; ledger verified 2026-06-28",51-9061.00_12491,0,"literal: picks parts from conveyor, loads/unloads test equipment on production floor; alt 51-2022.00_10018/1"
+C003,n,"no ledger event; no named customer; 'cannot run without human involvement'",,,"garment-factory trial"
+C004,n,"no ledger event; customer unnamed (Galbot-operated stores)",,,"would map to 29-2052 pharmacy tech retrieval if admitted"
+C005,y,"humanoid; named customer (CATL); ledger verified 2025-12-17; C010 is a duplicate",51-2022.00_10019,0,"SLICE only: instance is whole box-build (chassis, connectors, covers); robot does connector mating only. Strict literal = none"
+C006,n,"no ledger event; duplicate of China Post line (C096) at another site",,,"induction, not sorting; would be 43-5053.00_8229/3"
+C007,y,"GP crux: stationary dual-arm generalist (VLA-driven), named customer (Din Tai Fung); ledger verified 2026-08-27",51-6011.00_12119,0,"SLICE: folds+stacks napkins only; instance includes sort/count, laundry-plant setting. Strict literal = none"
+C010,n,"duplicate of C005 (same CATL Xiaomo deployment); no ledger event of its own",,,"merged into C005"
+C016,n,"not GP by owner def (probe-equipped inspection platform, predefined plans); no ledger; customer unnamed",,,
+C017,n,"not GP (planned trajectories, purpose-fitted); research pilot; no ledger",,,
+C018,n,"not GP (pre-programmed routines); no ledger",,,
+C019,n,"no ledger event; trial; no manipulation (imagery capture)",,,"would be 47-1011/17-3031 site progress capture"
+C020,n,"no ledger event; company-reported pilot, duration unknown",,,"would map to 51-9198/53-7063 tray moves if admitted"
+C021,n,"no ledger event; customer null (vendor solutions page)",,,
+C027,n,"ledger corrected 2026-03-02 but a 3-hour trial at own (Xiaomi) factory, not a customer production flow",,,"would be 51-2031.00 fastening if admitted"
+C032,y,"humanoid; named customer (BMW); ledger verified 2025-11-19; ENDED Nov 2025 (2026-10-07 Forbes) — counts in cumulative, not active",53-7063.00_14587,0,"literal: picks sheet-metal parts from racks/containers, loads into machine fixture (welding fixture), metal plant"
+C046,n,"research deployment in own buildings, not a customer; no ledger; 2021",,,
+C086,y,"humanoid; named customer (GXO); ledger verified 2025-01-01-digit-gxo-raas-deployment-rv, 2026-09-15",53-7063.00_14587,2,"literal: lifts totes from carts (AMR) onto conveyors in a DC. Not 53-7062_10781/2 (pallets/cases) nor 53-7064_3215/2 (pack bench)"
+C087,y,"humanoid; named customer (Schaeffler); ledger corrected 2026-03-25 (WSJ via Humanoids Daily)",53-7062.00_10781,4,"literal-ish: moves WIP baskets between two stations on a fixed plant layout (instance says carts/tuggers; robot carries by hand). Alt 53-7063_14587/3"
+C088,n,"site undisclosed; company claim only",,,"putwall work; no customer"
+C090,n,"no customer; beta feature; no ledger",,,
+C091,n,"no ledger event; custom end effector + pre-engineered procedure at one known cabinet (not GP redeployable by software alone)",,,"would be 51-8012/49-9051 breaker racking if admitted"
+C092,n,"customer unnamed; fixed industrial arm in purpose-built cell",,,
+C096,y,"humanoid; named customer (China Post); ledger verified 2026-05-31",43-5053.00_8214,3,"literal: sorts parcels to destination containers at a parcel operation (USPS-specific wording, same activity). Alt 43-5053_8227/1 (irregular parcels)"
+C097,y,"humanoid; named customer (CATL); ledger corrected 2026-06-24 (company claim 7x24, 3 months)",53-7062.00_10781,4,"literal: carries material bins between stations on production lines. SAME instance as C087 -> dedup"

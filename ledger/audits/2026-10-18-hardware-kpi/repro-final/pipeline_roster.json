@@ -1,0 +1,86 @@
+[
+ {
+  "maker": "Figure AI",
+  "customer": "BMW Group",
+  "since": "2025-04-06",
+  "first_event": "2025-04-06-figure-bmw-live-production-autonomous",
+  "counted": true
+ },
+ {
+  "maker": "Agility Robotics",
+  "customer": "GXO Logistics",
+  "since": "2025-06-02",
+  "first_event": "2025-06-02-agility-digit-gxo-daily-shifts-autonomous",
+  "counted": true
+ },
+ {
+  "maker": "AgiBot",
+  "customer": "Fulin Precision",
+  "since": "2025-07-09",
+  "first_event": "2025-07-09-agibot-a2w-fulin-precision-line-feeding",
+  "counted": true
+ },
+ {
+  "maker": "Spirit AI",
+  "customer": "CATL",
+  "since": "2025-12-17",
+  "first_event": "2025-12-17-spirit-ai-xiaomo-catl-pack-line",
+  "counted": true
+ },
+ {
+  "maker": "Humanoid (UK)",
+  "customer": "Siemens",
+  "since": "2026-01-15",
+  "first_event": "2026-01-15-humanoid-hmnd01-siemens-erlangen-totes",
+  "counted": true
+ },
+ {
+  "maker": "Galbot",
+  "customer": "CATL",
+  "since": "2026-01-16",
+  "first_event": "2026-01-16-galbot-s1-catl-zero-teleop",
+  "counted": true
+ },
+ {
+  "maker": "AgiBot",
+  "customer": "SAIC Motor",
+  "since": "2026-03-27",
+  "first_event": "2026-03-27-agibot-nengzai-saic-gm-battery-line",
+  "counted": true
+ },
+ {
+  "maker": "AgiBot",
+  "customer": "Longcheer Technology",
+  "since": "2026-04-14",
+  "first_event": "2026-04-14-agibot-g2-longcheer-mmit-deployment",
+  "counted": true
+ },
+ {
+  "maker": "Robotera",
+  "customer": "China Post",
+  "since": "2026-05-15",
+  "first_event": "2026-05-15-robotera-m7-china-post-guangzhou-sorting",
+  "counted": true
+ },
+ {
+  "maker": "UBTech",
+  "customer": "Sany Renewable Energy",
+  "since": "2026-06-13",
+  "first_event": "2026-06-13-ubtech-walker-s2-sany-wind-factory",
+  "counted": true
+ },
+ {
+  "maker": "Galbot",
+  "customer": "Laobaixing Pharmacy",
+  "since": "2026-09-30",
+  "first_event": "2026-09-30-galbot-g1-laobaixing-pharmacy",
+  "counted": true
+ },
+ {
+  "maker": "Leju Robotics",
+  "customer": "Zhaofeng Mechanical & Electronic",
+  "since": "2026-10-16",
+  "first_event": "2026-10-16-leju-kuavo-zhaofeng-parts-loading-r2",
+  "counted": true
+ }
+]
