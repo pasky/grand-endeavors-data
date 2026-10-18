@@ -1,10 +1,10 @@
 {
  "section": "robots-software",
  "items": {
-  "kpi": "2026-10-16",
-  "milestone:the-linux-kernel-patch": "2026-10-16",
-  "milestone:the-nature-author": "2026-10-16",
-  "milestone:the-10m-solopreneur": "2026-10-16",
+  "kpi": "2026-10-18",
+  "milestone:the-linux-kernel-patch": "2026-10-18",
+  "milestone:the-nature-author": "2026-10-18",
+  "milestone:the-10m-solopreneur": "2026-10-18",
   "challenge:reliability": "2026-10-18",
   "challenge:agency": "2026-10-18",
   "challenge:continuous-learning": "2026-10-18",
@@ -39,6 +39,20 @@
    ],
    "staged_events": 186,
    "spec_commit": "d53e7af948f8c9994609dfd1d1541cb8b57e8a3f",
+   "pi": "1.2.0"
+  },
+  {
+   "run": "20261018T193908Z",
+   "since": "per-item",
+   "until": "2026-10-18",
+   "items": [
+    "kpi",
+    "milestone:the-linux-kernel-patch",
+    "milestone:the-nature-author",
+    "milestone:the-10m-solopreneur"
+   ],
+   "staged_events": 5,
+   "spec_commit": "2d3234b8423146c7f5762979393c17955ebcf527",
    "pi": "1.2.0"
   }
  ]
