@@ -25,6 +25,11 @@ So it cannot be pooled into the ECI -> METR calibration (that would mix two scal
 
 ## Digitized values (digitize.py, reproducible; run with OPENBLAS_NUM_THREADS=1)
 
+The figure as read is kept here (figure1.png, sha256 2c3ae170b20abeb222731c79fb0e89ead557461b695fe96fedb60a3762ac904e);
+`digitize.py figure1.png --write` reproduces models.csv (every marker; the dashboard's ECI chart
+overlays it). The Mythos marker is labelled "Mythos Preview (new)" in the figure: AISI's newer
+checkpoint, not the early one METR measured.
+
 Marker centroids on the 4778 x 2643 px figure; log axis from its four gridlines (0.1, 1, 10, 100 h;
 479.7 px per decade), so the reading error is well under 1%. Check: Claude Sonnet 4.5 reads 16.0
 min (AISI's text: 16 min).
@@ -44,17 +49,31 @@ min (AISI's text: 16 min).
 
 ## The slope check (slope.py)
 
-OLS of log2(AISI horizon) on ECI: **0.216 +- 0.032** doublings per ECI point over the 9 models with
-an ECI score, **0.178 +- 0.028** without GPT-5.5 (which AISI calls highly uncertain), against the
-frozen calibration's 0.2226 (METR's software suite, 21 models, ECI <= 156.76). The task-horizon
-driver (drivers.yaml) already allows a frontier slope of about 0.18-0.27 (an assumed sd of 0.043 per
-point); AISI's slope sits in the lower half of that range. If the flatter value held beyond ECI
-156.76, the ~10-point extrapolation to today's frontier would overstate the software horizon by about
-(0.223 - 0.178) x 10 = 0.45 doublings: inside the driver's 0.70-doubling software conversion error.
+OLS of log2(AISI horizon) on ECI: **0.216 +- 0.032** (standard error) doublings per ECI point over
+the 9 models with an ECI score, **0.178 +- 0.028** without GPT-5.5 (which AISI calls highly
+uncertain; approximate 95% interval 0.11-0.25), against the frozen calibration's 0.2226 (METR's
+software suite, 21 models, ECI <= 156.76). The errors are OLS standard errors only: AISI's own
+per-model uncertainty (its bootstrap bands) is not propagated. Level offsets (AISI minus converted)
+range from -1.84 (GPT-5) to +0.08 (GPT-5.5) doublings, mean -0.77.
 
-Use: an independent check on the *slope*, the part of the conversion the frontier extrapolation rests
-on (GPT-5.5 at ECI 158.95 is beyond METR's calibration range), not on the level. Owner decision
-pending: whether to narrow the driver's slope allowance with it (not done here).
+Reading: **compatible with the conversion's slope, but too uncertain to validate its
+extrapolation.** Without GPT-5.5 the central estimate is about 20% flatter, and no model beyond ECI
+156.76 remains, so the frontier is not independently checked. The task-horizon driver (drivers.yaml)
+already widens the software conversion error for the slope's form beyond METR's data (an assumed sd
+of 0.043 doublings per point, i.e. about 0.18-0.27, folded into a fixed 0.70-doubling level error at
+the anchor, not a sampled slope). If only the slope beyond 156.76 were the flatter 0.178, keeping the
+fit below it, today's ~10-point extrapolation would overstate the software horizon by about
+(0.223 - 0.178) x 10 = 0.45 doublings (1.4x), inside that 0.70-doubling error.
+
+Use: a check on the *slope* of the conversion, not on its level. Owner decision pending: whether to
+use it to inform the driver's slope allowance (not done here).
+
+## Verification
+
+- 2026-10-18, extraction: Claude Sonnet 4.5 reads 16.0 min against AISI's text (16 min); marker
+  count, colours (provider legend) and evenly spaced gridlines asserted by digitize.py.
+- 2026-10-18, independent check: a separate review agent fetched the post and the figure itself,
+  inspected it, and reproduced all ten values (peak memory 374 MB under a 2 GiB limit).
 
 ## Series
 
