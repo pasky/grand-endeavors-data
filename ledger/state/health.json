@@ -7,7 +7,11 @@
   "challenge:safe-in-vivo-rejuvenation": "2026-10-18",
   "challenge:programmable-immunity": "2026-10-18",
   "challenge:brain-preservation": "2026-10-18",
-  "beyond": "2026-10-18"
+  "beyond": "2026-10-18",
+  "kpi": "2026-10-18",
+  "milestone:taming-cancer": "2026-10-18",
+  "milestone:precise-screening": "2026-10-18",
+  "milestone:unbroken-mind": "2026-10-18"
  },
  "runs": [
   {
@@ -24,6 +28,20 @@
     "beyond"
    ],
    "staged_events": 228,
+   "spec_commit": "d53e7af948f8c9994609dfd1d1541cb8b57e8a3f",
+   "pi": "1.2.0"
+  },
+  {
+   "run": "20261018T170737Z",
+   "since": "2026-01-01",
+   "until": "2026-10-18",
+   "items": [
+    "kpi",
+    "milestone:taming-cancer",
+    "milestone:precise-screening",
+    "milestone:unbroken-mind"
+   ],
+   "staged_events": 87,
    "spec_commit": "d53e7af948f8c9994609dfd1d1541cb8b57e8a3f",
    "pi": "1.2.0"
   }
