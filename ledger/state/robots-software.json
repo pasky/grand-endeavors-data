@@ -4,7 +4,12 @@
   "kpi": "2026-10-16",
   "milestone:the-linux-kernel-patch": "2026-10-16",
   "milestone:the-nature-author": "2026-10-16",
-  "milestone:the-10m-solopreneur": "2026-10-16"
+  "milestone:the-10m-solopreneur": "2026-10-16",
+  "challenge:reliability": "2026-10-18",
+  "challenge:agency": "2026-10-18",
+  "challenge:continuous-learning": "2026-10-18",
+  "challenge:novelty": "2026-10-18",
+  "beyond": "2026-10-18"
  },
  "runs": [
   {
@@ -19,6 +24,21 @@
    ],
    "staged_events": 73,
    "spec_commit": "de1f44c9db7b445d0f9ae6bbf7d5766537f9e232",
+   "pi": "1.2.0"
+  },
+  {
+   "run": "20261018T170737Z",
+   "since": "2026-01-01",
+   "until": "2026-10-18",
+   "items": [
+    "challenge:reliability",
+    "challenge:agency",
+    "challenge:continuous-learning",
+    "challenge:novelty",
+    "beyond"
+   ],
+   "staged_events": 186,
+   "spec_commit": "d53e7af948f8c9994609dfd1d1541cb8b57e8a3f",
    "pi": "1.2.0"
   }
  ]
