@@ -1,7 +1,7 @@
 {
  "section": "fusion",
  "items": {
-  "kpi": "2026-09-30",
+  "kpi": "2026-10-18",
   "milestone:the-first-watt": "2026-10-18",
   "milestone:grid-parity": "2026-10-18",
   "challenge:d-t-fusion": "2026-10-18",
@@ -35,6 +35,17 @@
    ],
    "staged_events": 162,
    "spec_commit": "d53e7af948f8c9994609dfd1d1541cb8b57e8a3f",
+   "pi": "1.2.0"
+  },
+  {
+   "run": "20261018T191758Z",
+   "since": "per-item",
+   "until": "2026-10-18",
+   "items": [
+    "kpi"
+   ],
+   "staged_events": 4,
+   "spec_commit": "81985ba369a88d63fc91187d7ca9887b6a543b5e",
    "pi": "1.2.0"
   }
  ]
