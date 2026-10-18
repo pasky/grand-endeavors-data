@@ -32,6 +32,17 @@
    "staged_events": 14,
    "spec_commit": "5ca52b5c5755cb42694419c82ed2667989df61d6",
    "pi": "1.2.0"
+  },
+  {
+   "run": "20261018T100743Z",
+   "since": "2025-01-01",
+   "until": "2026-10-18",
+   "items": [
+    "kpi"
+   ],
+   "staged_events": 1,
+   "spec_commit": "b42f529396cd4c5d88feaa681dcdf0283261f94b",
+   "pi": "1.2.0"
   }
  ]
 }
