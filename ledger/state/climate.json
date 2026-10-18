@@ -30,16 +30,44 @@
    "staged_events": 8,
    "spec_commit": "1c1aedaa4d647cc813018d456c59bb5b1b5ea7b3",
    "pi": "0.87.1"
+  },
+  {
+   "run": "20261018T184718Z",
+   "since": "per-item",
+   "until": "2026-10-18",
+   "items": [
+    "challenge:sunlight-management",
+    "beyond"
+   ],
+   "staged_events": 58,
+   "spec_commit": "d53e7af948f8c9994609dfd1d1541cb8b57e8a3f",
+   "pi": "1.2.0"
+  },
+  {
+   "run": "20261018T170737Z",
+   "since": "per-item",
+   "until": "2026-10-18",
+   "items": [
+    "kpi",
+    "milestone:the-bend",
+    "milestone:the-balance",
+    "milestone:the-ceiling",
+    "challenge:net-zero-transition",
+    "challenge:permanent-removal"
+   ],
+   "staged_events": 42,
+   "spec_commit": "d53e7af948f8c9994609dfd1d1541cb8b57e8a3f",
+   "pi": "1.2.0"
   }
  ],
  "items": {
-  "kpi": "2026-09-28",
-  "milestone:the-bend": "2026-09-28",
-  "milestone:the-balance": "2026-09-28",
-  "milestone:the-ceiling": "2026-09-28",
-  "challenge:net-zero-transition": "2026-09-28",
-  "challenge:permanent-removal": "2026-09-28",
-  "challenge:sunlight-management": "2026-09-28",
-  "beyond": "2026-09-28"
+  "kpi": "2026-10-18",
+  "milestone:the-bend": "2026-10-18",
+  "milestone:the-balance": "2026-10-18",
+  "milestone:the-ceiling": "2026-10-18",
+  "challenge:net-zero-transition": "2026-10-18",
+  "challenge:permanent-removal": "2026-10-18",
+  "challenge:sunlight-management": "2026-10-18",
+  "beyond": "2026-10-18"
  }
 }
