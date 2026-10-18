@@ -1,0 +1,36 @@
+== 1. The KPI and its parts, over the KPI's window 2025-06-05..2026-09-22 (halves split 2026-01-28)
+  horizon-80-blended           all  2.92 mo [2.74-3.12]   n=17  first half  3.02 mo [2.39-4.10]   n=8  second half  2.60 mo [2.30-3.00]   n=10
+  horizon-80-software-eci      all  3.59 mo [3.30-3.93]   n=14  first half  3.60 mo [2.58-5.95]   n=6  second half  3.68 mo [2.99-4.79]   n=9
+  horizon-80-remote-rli        all  2.55 mo [2.23-2.98]   n=11  first half  2.17 mo [1.49-4.02]   n=4  second half  2.10 mo [1.65-2.89]   n=8
+  rli-automation-by-release    all  3.46 mo [3.06-3.99]   n=11  first half  2.72 mo [1.84-5.21]   n=4  second half  3.03 mo [2.39-4.16]   n=8
+  eci-frontier-by-release      1.25 ECI points per month (linear OLS, from 2025-06-10)
+  software horizon since 2024:  3.49 mo [3.37-3.63]   n=23; since its start:  3.81 mo [3.51-4.16]   n=23
+
+== 2. METR's own measurements (frontier by release date)
+  metr-50-horizon-by-release
+    2019..2025-03 (METR's original paper span)     7.35 mo [6.41-8.61]   n=11
+    all (2019..2026-04)                            5.97 mo [5.23-6.96]   n=18
+    from 2023                                      4.01 mo [3.57-4.57]   n=16
+    from the fitted break (2024-05-01)             3.25 mo [2.97-3.60]   n=14
+    over the KPI's window, from 2025-06-05         3.32 mo [2.40-5.39]   n=7
+    break 2024-05-01: SSE 2.21, doubling 8.4 mo before, 3.37 mo after
+    break 2024-03-01: SSE 2.30, doubling 8.7 mo before, 3.46 mo after
+    break 2024-07-01: SSE 2.53, doubling 8.0 mo before, 3.28 mo after
+  metr-80-horizon-by-release
+    2019..2025-03 (METR's original paper span)     8.11 mo [6.74-10.19]  n=10
+    all (2019..2026-04)                            6.36 mo [5.47-7.60]   n=17
+    from 2023                                      4.29 mo [3.69-5.11]   n=15
+    from the fitted break (2024-05-01)             3.40 mo [3.04-3.86]   n=13
+    over the KPI's window, from 2025-06-05         4.51 mo [3.12-8.11]   n=7
+    break 2024-05-01: SSE 3.34, doubling 9.2 mo before, 3.53 mo after
+    break 2024-03-01: SSE 3.74, doubling 9.6 mo before, 3.61 mo after
+    break 2024-07-01: SSE 3.78, doubling 8.8 mo before, 3.42 mo after
+  METR's own file (benchmark_results_1_1.yaml, p50): all-time 187.8 days = 6.2 mo, from 2023 128.7 days = 4.2 mo [3.4-5.2]
+
+== 3. The remote side's pace vs the assumed slope (BETA) of METR's success-vs-length curve
+  BETA 0.4 (odds x1.49 per doubling): latest 80% horizon 5.6 min, doubling  1.79 mo [1.57-2.08]   n=11
+  BETA 0.5 (odds x1.65 per doubling): latest 80% horizon  14 min, doubling  2.19 mo [1.91-2.55]   n=11
+  BETA 0.6 (odds x1.82 per doubling): latest 80% horizon  24 min, doubling  2.55 mo [2.23-2.97]   n=11  (used)
+  BETA 0.7 (odds x2.01 per doubling): latest 80% horizon  36 min, doubling  2.87 mo [2.51-3.36]   n=11
+  BETA 0.8 (odds x2.23 per doubling): latest 80% horizon  49 min, doubling  3.15 mo [2.75-3.69]   n=11
+  BETA 1.0 (odds x2.72 per doubling): latest 80% horizon   1.2 h, doubling  3.60 mo [3.14-4.22]   n=11

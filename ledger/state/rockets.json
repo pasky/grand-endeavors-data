@@ -1,0 +1,33 @@
+{
+ "section": "rockets",
+ "items": {
+  "kpi": "2026-10-18",
+  "milestone:the-deluge": "2026-10-18",
+  "milestone:the-export": "2026-10-18",
+  "milestone:the-homestead": "2026-10-18",
+  "challenge:radiation-shielding": "2026-10-18",
+  "challenge:closed-loop-life-support": "2026-10-18",
+  "challenge:isru-at-scale": "2026-10-18",
+  "beyond": "2026-10-18"
+ },
+ "runs": [
+  {
+   "run": "20261018T170737Z",
+   "since": "2026-01-01",
+   "until": "2026-10-18",
+   "items": [
+    "kpi",
+    "milestone:the-deluge",
+    "milestone:the-export",
+    "milestone:the-homestead",
+    "challenge:radiation-shielding",
+    "challenge:closed-loop-life-support",
+    "challenge:isru-at-scale",
+    "beyond"
+   ],
+   "staged_events": 134,
+   "spec_commit": "d53e7af948f8c9994609dfd1d1541cb8b57e8a3f",
+   "pi": "1.2.0"
+  }
+ ]
+}
