@@ -1,0 +1,44 @@
+benchmark_data.zip sha256 0555162213a0a0495fdfbadab08bd909b4042110161b68f691c81f52abfabc82
+reproduction: 277 models, max |ECI - published| 0.0053
+  METR Time Horizons: difficulty 136.7, slope 0.063 per ECI point
+  Remote Labor Index: difficulty 175.3, slope 0.148 per ECI point
+
+calibration per variant (frontier_h: the frontier model's horizon under the variant's own refit; frontier_h_kpi: the KPI's frozen line on the published ECI)
+       variant   q  n  eci_per_doubling    r2  resid_sd  top_pair_eci  frontier_model  frontier_eci  frontier_h  pred_se_frontier  swe_gap  swe_pool
+          full p80 21             4.492 0.966     0.487       156.764 Claude Opus 5.5       166.824       7.931             0.553    0.014       9.0
+          full p50 21             4.415 0.971     0.457       156.764 Claude Opus 5.5       166.824      45.658             0.519      NaN       NaN
+       no-METR p80 20             4.380 0.970     0.456       156.734 Claude Opus 5.5       166.831       9.071             0.527   -0.165       9.0
+       no-METR p50 20             4.329 0.973     0.441       156.734 Claude Opus 5.5       166.831      50.774             0.509      NaN       NaN
+        no-RLI p80 21             4.492 0.966     0.487       156.760 Claude Opus 5.5       166.826       7.936             0.553    0.016       9.0
+        no-RLI p50 21             4.415 0.971     0.457       156.760 Claude Opus 5.5       166.826      45.684             0.519      NaN       NaN
+no-METR-no-RLI p80 20             4.380 0.970     0.456       156.729 Claude Opus 5.5       166.841       9.085             0.527   -0.163       9.0
+no-METR-no-RLI p50 20             4.329 0.973     0.441       156.729 Claude Opus 5.5       166.841      50.852             0.509      NaN       NaN
+KPI now: Claude Opus 5.5 7.93 h (p80)
+
+calibration models: ECI without METR+RLI minus full, and p80 residuals (doublings)
+                           model  eci_full  shift  resid_full  resid_no-METR-no-RLI
+                GPT-4 (Mar 2023)    125.88  -0.22        0.05                  0.14
+          GPT-4 Turbo (Nov 2023)    126.46  -0.01       -0.26                 -0.22
+                   Claude 3 Opus    126.91   0.20       -0.66                 -0.67
+          GPT-4 Turbo (Apr 2024)    127.25  -0.02       -0.19                 -0.15
+               GPT-4o (May 2024)    129.05  -0.06       -0.14                 -0.11
+               Claude 3.5 Sonnet    130.00   0.00        0.04                  0.06
+                      o1-preview    134.78   0.06        0.38                  0.36
+Claude 3.5 Sonnet (October 2024)    133.53   0.01       -0.11                 -0.11
+                              o1    141.84   0.10       -0.51                 -0.58
+               Claude 3.7 Sonnet    141.14  -0.03        0.42                  0.38
+                              o3    146.87   0.00        0.45                  0.37
+                   Claude Opus 4    142.65  -0.05        0.84                  0.80
+                 Claude Opus 4.1    144.09  -0.08        0.72                  0.67
+                           GPT-5    150.00   0.00        0.11                  0.01
+                    Gemini 3 Pro    152.90   0.01       -0.04                 -0.15
+                 Claude Opus 4.5    150.17  -0.04        0.44                  0.35
+                         GPT-5.2    153.46  -0.01        0.12                  0.01
+                 Claude Opus 4.6    155.27  -0.01       -0.20                 -0.32
+                   GPT-5.3 Codex    156.76    NaN       -0.88                   NaN
+                  Gemini 3.1 Pro    154.67  -0.01        0.30                  0.18
+                         GPT-5.4    156.72   0.01       -0.89                 -1.03
+
+frontier (top 10 by full ECI): ECI shift without METR+RLI
+Claude Opus 5.5 +0.02, GPT-6 Astra -0.01, GPT-6.1 Sol -0.02, Claude Fable 5.1 -0.01, Gemini 4 Argon -0.01, Claude Sonnet 5.5 -0.01, Claude Opus 5 -0.01, GPT-6 Sol -0.01, Claude Fable 5 -0.03, GPT-5.5 Pro -0.01
+wrote data/ledger/audits/2026-10-18-eci-overlap/eci_variants.csv, calibration.csv
