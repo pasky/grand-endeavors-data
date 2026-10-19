@@ -6,7 +6,11 @@
   "milestone:the-blue-collar-shift": "2026-10-12",
   "milestone:the-dark-line": "2026-10-12",
   "kpi": "2026-10-18",
-  "beyond": "2026-10-18"
+  "beyond": "2026-10-18",
+  "milestone:robotaxi-saturation": "2026-10-18",
+  "challenge:dexterous-manipulation": "2026-10-18",
+  "challenge:generalization": "2026-10-18",
+  "challenge:power-efficiency-cost": "2026-10-18"
  },
  "runs": [
   {
@@ -65,6 +69,22 @@
    ],
    "staged_events": 2,
    "spec_commit": "447a251c9e0cd2f1f17e963eebe8829bc1e300f4",
+   "pi": "1.2.0"
+  },
+  {
+   "run": "20261018T222255Z",
+   "since": "2026-01-01",
+   "until": "2026-10-18",
+   "items": [
+    "kpi",
+    "milestone:robotaxi-saturation",
+    "challenge:dexterous-manipulation",
+    "challenge:generalization",
+    "challenge:power-efficiency-cost",
+    "beyond"
+   ],
+   "staged_events": 99,
+   "spec_commit": "14cfb16f907ca6c795914d84e78d02b9530d67c5",
    "pi": "1.2.0"
   }
  ]
