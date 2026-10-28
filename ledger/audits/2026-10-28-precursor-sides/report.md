@@ -61,3 +61,26 @@
   by independently accepted AI-written work; restate the crux and the path accordingly (the
   milestone still assumes maintainers judge openly AI-submitted patches on merit).
 - Labels and rationales must not present Polsia's ~$11M, Bun or Ladybird as qualifying.
+
+## Addendum (2026-10-28, after the first re-assessment, run 20261028T182049Z)
+
+A code review of the change found two problems for the-linux-kernel-patch:
+
+1. **ai-contribution-lines-merged-max is not empty.** The research pass missed a known case in the
+   ledger: Sasha Levin's Linux tracing patch (+7 lines, committed 2025-03-23 by tracing maintainer
+   Steven Rostedt, merged for 6.15), which LWN (https://lwn.net/Articles/1026558/, 2025-06-26)
+   reports was "entirely written by an LLM, changelog included. Levin reviewed and tested it, but
+   did not write the code" (event 2025-06-01-lwn-llm-patch-merged-615-rv). It is now the series'
+   row: 7 lines. The human side's rung is therefore demonstrated at 7 lines, 0.07% of the 10k
+   threshold, not absent. Larger qualifying cases may exist (the search was not exhaustive).
+2. **Independence was stated the wrong way round.** Run 20261028T182049Z's cruxes, blockers and
+   update channels ask for acceptance by "maintainers who do not control the project". The rule
+   restricts the SUBMITTER (or whoever tasked the agent) and the AI developer: they must not
+   control the project. A project lead independently accepting someone else's contribution is
+   fine. Correct this wherever it appears.
+
+Also clarified (definition): a human may have designed the work; only a claim of most of the
+writing, or a statement that AI merely helped, disqualifies it.
+
+What to do: re-assess the-linux-kernel-patch only, under rule 7: keep the model and draws, cite
+the 7-line row as the human side's current rung, and fix the independence wording.
