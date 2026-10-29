@@ -5,7 +5,7 @@
   "milestone:the-fukushima-test": "2026-10-19",
   "milestone:the-blue-collar-shift": "2026-10-19",
   "milestone:the-dark-line": "2026-10-19",
-  "kpi": "2026-10-18",
+  "kpi": "2026-10-28",
   "beyond": "2026-10-18",
   "milestone:robotaxi-saturation": "2026-10-18",
   "challenge:dexterous-manipulation": "2026-10-18",
@@ -99,6 +99,17 @@
    ],
    "staged_events": 5,
    "spec_commit": "1ae2a9268e887e96f66bf5e1910cfacdb62c3874",
+   "pi": "1.2.0"
+  },
+  {
+   "run": "20261028T183714Z",
+   "since": "2023-01-01",
+   "until": "2026-10-28",
+   "items": [
+    "kpi"
+   ],
+   "staged_events": 8,
+   "spec_commit": "167938f1e7cfe1081b6e5e1fcbc6fec94f07266a",
    "pi": "1.2.0"
   }
  ]
